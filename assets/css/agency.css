@@ -779,7 +779,7 @@ select {
   margin: 0 auto;
   padding: 25px;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
 }
 .portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
@@ -1089,7 +1089,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .uc-card {
-  background: white;
+  background: #f4f1eb;
   border: 1px solid #d6d0c4;
   border-radius: 6px;
   padding: 1.5rem;
@@ -1142,7 +1142,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .blog-card {
-  background: white;
+  background: #f4f1eb;
   border: 1px solid #d6d0c4;
   overflow: hidden;
   transition: box-shadow 0.2s ease;
