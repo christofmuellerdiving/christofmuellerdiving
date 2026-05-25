@@ -1247,13 +1247,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding-top: 0;
 }
 .blog-post-content h3 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #007a72;
   margin-top: 36px;
   margin-bottom: 12px;
+  font-family: "Playfair Display", Georgia, serif;
 }
 .blog-post-content p {
   margin-bottom: 20px;
