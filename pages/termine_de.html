@@ -11,22 +11,24 @@
   />
   
   
-  <meta name="author" content="Christof Müller" /><meta name="description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Christof Müller unterrichtet beides im Freiwasser." />
-  <link rel="canonical" href="https://www.thinking-diver.com/404.html" />
+  <meta name="author" content="Christof Müller" /><meta name="description" content="Kurstermine für Sidemount- und GUE-Kurse bei Heidelberg mit Christof Müller. Höchstens drei Teilnehmer pro Kurs." />
+  <link rel="canonical" href="https://www.thinking-diver.com/pages/termine_de.html" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="alternate" hreflang="de" href="https://www.thinking-diver.com/pages/termine_de.html" />
+  <link rel="alternate" hreflang="en" href="https://www.thinking-diver.com/pages/termine_en.html" />
 
   <!-- Vorschau beim Teilen (Facebook, WhatsApp, LinkedIn) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="thinking-diver.com" />
-  <meta property="og:title" content="Page Not Found | Christof Müller" />
-  <meta property="og:description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Christof Müller unterrichtet beides im Freiwasser." />
-  <meta property="og:url" content="https://www.thinking-diver.com/404.html" />
+  <meta property="og:title" content="Kurstermine | Christof Müller" />
+  <meta property="og:description" content="Kurstermine für Sidemount- und GUE-Kurse bei Heidelberg mit Christof Müller. Höchstens drei Teilnehmer pro Kurs." />
+  <meta property="og:url" content="https://www.thinking-diver.com/pages/termine_de.html" />
   <meta property="og:image" content="https://www.thinking-diver.com/assets/img/og-default.jpg" />
   <meta property="og:locale" content="de_DE" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Page Not Found | Christof Müller</title>
+  <title>Kurstermine | Christof Müller</title>
 
   <!-- Bootstrap core CSS -->
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
@@ -51,7 +53,7 @@
   <body id="page-top" >
       
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" data-hidewithscroll="true">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" data-hidewithscroll="hideScroll">
     <div class="container">
         <a class="navbar-brand" href="/pages/index_de.html" aria-label="Christof Müller"><img height="50" src="/assets/img/logo.png" alt="Christof Müller" /></a>
       <button class="navbar-toggler navbar-toggler-right collapsed" type="button" 
@@ -122,40 +124,51 @@
   <script src="/assets/js/custom.js?v=1790888045"></script>
   <!-- End Navigation -->
 
-<script>
-  // On the 404 page there are no navigable sections, so always redirect to the target page.
-  window.goTo = function(base, section, folder, locale) {
-    window.location.href = folder + '/' + base + '_' + locale + '.html#' + section;
-  };
-</script>
-<section class="showcase page-section" id="blank">
+<div class="container" id="pagecontainer">
+
+    <section class="page-section dates-page" id="termine">
   <div class="container">
-    <div class="carouselSlider">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/dev_site/assets/img/background/2.jpg"
-            class="d-block mainImage"
-            alt="Page not found"
-          />
+    <div class="text-center">
+      <p class="kicker kicker-center">Kurstermine</p>
+      <h1 class="section-heading">Kurstermine</h1>
+      <div class="section-intro"><p>Alle angekündigten Kurse aus Christofs Kalender. Höchstens drei Teilnehmer pro Kurs.</p></div>
+    </div>
+    
+    <ul class="dates-list" data-dates>
+      <li class="date-row" data-end="2026-10-25">
+        <div class="date-when">
+          <span class="date-label">24.–25.10.2026</span>
+          <span class="date-wd">Sa–So · 2 Tage</span>
         </div>
-      </div>
-    </div>
-
-    <div class="overlay"></div>
-    <div class="pixels"></div>
-
-    <div class="text" style="text-align: center; width: 100%;">
-      <h2>404</h2>
-      <h3>Page Not Found</h3>
-      <div style="height: 80px;"></div>
-      <p style="text-align: center; width: 100%; max-width: 100%;">The page you are looking for could not be found.</p>
-      <a href="javascript:history.go(-1)">Go Back</a>
-    </div>
+        <div class="date-what">
+          <span class="date-title">SDI Sidemount Deepstop Schwetzingen 1 Platz frei</span>
+          
+        </div>
+        <a class="link-arrow date-ask" data-umami-event="date-ask" href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+SDI+Sidemount+Deepstop+Schwetzingen+1+Platz+frei%2C+24.%E2%80%9325.10.2026">Termin anfragen</a>
+      </li>
+    </ul>
+    
+    <p class="dates-empty" hidden>Gerade stehen keine festen Termine im Kalender.</p>
+    <p class="dates-note">Kein passender Termin dabei? <a class="link-arrow" href="/pages/contact_de.html">Wunschtermin anfragen</a></p>
   </div>
 </section>
+<script>
+  // Termine, die seit dem letzten Seitenbau vorbei sind, ausblenden
+  (function () {
+    var list = document.querySelector('[data-dates]');
+    if (!list) return;
+    var d = new Date();
+    var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    var left = 0;
+    list.querySelectorAll('[data-end]').forEach(function (li) {
+      if (li.getAttribute('data-end') < today) li.remove(); else left++;
+    });
+    if (!left) { list.remove(); document.querySelector('.dates-empty').hidden = false; }
+  })();
+</script>
 
-<section class="empty-section"></section>
+
+</div>
 
 
 	  <!-- Footer -->

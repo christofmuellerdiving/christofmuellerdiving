@@ -34,15 +34,15 @@
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="/assets/css/all.min.css?v=1790884501" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/all.min.css?v=1790888045" rel="stylesheet" type="text/css" />
 
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1790884501" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1790888045" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1790884501" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1790888045" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
@@ -121,7 +121,7 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1790884501"></script>
+  <script src="/assets/js/custom.js?v=1790888045"></script>
   <!-- End Navigation -->
 
 
@@ -170,6 +170,33 @@
 </script>
 <!-- End Hero -->
 
+
+<section class="next-dates" id="naechste-termine" aria-label="Nächste Termine">
+  <div class="container nd-inner">
+    <p class="kicker nd-kicker">Nächste Termine</p>
+    <ul class="nd-list" data-next-dates>
+      <li class="nd-item" data-end="2026-10-25">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+SDI+Sidemount+Deepstop+Schwetzingen+1+Platz+frei%2C+24.%E2%80%9325.10.2026" data-umami-event="date-ask-band">
+          <span class="nd-date">24.–25.10.2026</span>
+          <span class="nd-title">SDI Sidemount Deepstop Schwetzingen 1 Platz frei</span>
+          <span class="nd-meta">Sa–So · 2 Tage<span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
+    </ul>
+    <a class="link-arrow nd-all" href="/pages/termine_de.html" data-umami-event="dates-all">Alle Termine</a>
+  </div>
+</section>
+<script>
+  // Vergangene Termine entfernen; sind keine mehr übrig, verschwindet das Band
+  (function () {
+    var list = document.querySelector('[data-next-dates]');
+    if (!list) return;
+    var d = new Date();
+    var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    list.querySelectorAll('[data-end]').forEach(function (li) { if (li.getAttribute('data-end') < today) li.remove(); });
+    if (!list.children.length) document.getElementById('naechste-termine').remove();
+  })();
+</script>
 
 
 <!--  Grid -->
@@ -902,7 +929,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
 
 <p><strong>Was du übst:</strong> Gasplanung nach eigenem und Teamverbrauch, ein exaktes Deko-Profil, die Stage-Flasche tragen, ablegen und wieder aufnehmen, Gaswechsel im Team, die Boje solo und im Team setzen, kontrollierte Aufstiege an Boje oder Leine, Ersatzmaske einsetzen und die Reaktion auf Gasverlust.</p>
 
-<p><strong>Rahmen:</strong> 4 Tauchgänge, davon 2 tiefer als 30 Meter, und mindestens 6 Stunden Theorie und Briefings. Zusammen mit Advanced Nitrox sind es 6 Tauchgänge, kombiniert mit Intro to Tech oder TDI Sidemount und Advanced Nitrox mindestens 8. Im Freiwasser höchstens vier Teilnehmer pro Instruktor.</p>
+<p><strong>Rahmen:</strong> 4 Tauchgänge, davon 2 tiefer als 30 Meter, und mindestens 6 Stunden Theorie und Briefings. Zusammen mit Advanced Nitrox sind es 6 Tauchgänge, kombiniert mit Intro to Tech oder TDI Sidemount und Advanced Nitrox mindestens 8. Höchstens drei Teilnehmer pro Kurs.</p>
 
 <p><strong>Voraussetzungen:</strong> SDI Advanced Adventure Diver, Advanced Diver oder gleichwertig, 25 geloggte Freiwassertauchgänge, Mindestalter 18 Jahre.</p>
 
@@ -1653,45 +1680,6 @@ darunter ein Tauchgang bei reduziertem Umgebungslicht, zum Beispiel ein Nachttau
 <!-- End Grid -->
 
 
-<section class="page-section dates-section" id="termine">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <p class="kicker kicker-center">Kurstermine</p>
-        <h2 class="section-heading">Nächste Termine</h2>
-      </div>
-    </div>
-    <ul class="dates-list" data-dates>
-      <li class="date-row" data-end="2026-10-25">
-        <div class="date-when">
-          <span class="date-label">24.–25.10.2026</span>
-          <span class="date-wd">Sa–So · 2 Tage</span>
-        </div>
-        <div class="date-what">
-          <span class="date-title">SDI Sidemount Deepstop Schwetzingen 1 Platz frei</span>
-          
-        </div>
-        <a class="link-arrow date-ask" data-umami-event="date-ask" href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+SDI+Sidemount+Deepstop+Schwetzingen+1+Platz+frei%2C+24.%E2%80%9325.10.2026">Termin anfragen</a>
-      </li>
-    </ul>
-    <p class="dates-empty" hidden>Gerade stehen keine festen Termine im Kalender.</p>
-    <p class="dates-note">Kein passender Termin dabei? <a class="link-arrow" href="/pages/contact_de.html">Wunschtermin anfragen</a></p>
-  </div>
-</section>
-<script>
-  // Termine, die seit dem letzten Seitenbau vorbei sind, ausblenden
-  (function () {
-    var list = document.querySelector('[data-dates]');
-    if (!list) return;
-    var d = new Date();
-    var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-    var left = 0;
-    list.querySelectorAll('[data-end]').forEach(function (li) {
-      if (li.getAttribute('data-end') < today) li.remove(); else left++;
-    });
-    if (!left) { list.remove(); document.querySelector('.dates-empty').hidden = false; }
-  })();
-</script>
 
 
 <!--  Grid -->

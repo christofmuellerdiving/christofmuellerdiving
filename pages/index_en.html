@@ -34,15 +34,15 @@
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="/assets/css/all.min.css?v=1790884501" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/all.min.css?v=1790888045" rel="stylesheet" type="text/css" />
 
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1790884501" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1790888045" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1790884501" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1790888045" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
@@ -121,7 +121,7 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1790884501"></script>
+  <script src="/assets/js/custom.js?v=1790888045"></script>
   <!-- End Navigation -->
 
 
@@ -170,6 +170,33 @@
 </script>
 <!-- End Hero -->
 
+
+<section class="next-dates" id="naechste-termine" aria-label="Upcoming dates">
+  <div class="container nd-inner">
+    <p class="kicker nd-kicker">Upcoming dates</p>
+    <ul class="nd-list" data-next-dates>
+      <li class="nd-item" data-end="2026-10-25">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+SDI+Sidemount+Deepstop+Schwetzingen+1+Platz+frei%2C+24%E2%80%9325+Oct+2026" data-umami-event="date-ask-band">
+          <span class="nd-date">24–25 Oct 2026</span>
+          <span class="nd-title">SDI Sidemount Deepstop Schwetzingen 1 Platz frei</span>
+          <span class="nd-meta">Sat–Sun · 2 days<span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
+    </ul>
+    <a class="link-arrow nd-all" href="/pages/termine_en.html" data-umami-event="dates-all">All dates</a>
+  </div>
+</section>
+<script>
+  // Vergangene Termine entfernen; sind keine mehr übrig, verschwindet das Band
+  (function () {
+    var list = document.querySelector('[data-next-dates]');
+    if (!list) return;
+    var d = new Date();
+    var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    list.querySelectorAll('[data-end]').forEach(function (li) { if (li.getAttribute('data-end') < today) li.remove(); });
+    if (!list.children.length) document.getElementById('naechste-termine').remove();
+  })();
+</script>
 
 
 <!--  Grid -->
@@ -895,7 +922,7 @@
 
 <p><strong>What you practise:</strong> gas planning based on your own and your team’s consumption, an exact decompression profile, carrying, dropping and retrieving the stage cylinder, gas switches as a team, deploying an SMB solo and as a team, controlled ascents on an SMB or line, deploying a backup mask and responding to a gas loss.</p>
 
-<p><strong>Scope:</strong> 4 dives, 2 of them deeper than 30 metres, and at least 6 hours of theory and briefings. Combined with Advanced Nitrox it is 6 dives; combined with Intro to Tech or TDI Sidemount plus Advanced Nitrox at least 8. In open water at most four students per instructor.</p>
+<p><strong>Scope:</strong> 4 dives, 2 of them deeper than 30 metres, and at least 6 hours of theory and briefings. Combined with Advanced Nitrox it is 6 dives; combined with Intro to Tech or TDI Sidemount plus Advanced Nitrox at least 8. At most three students per course.</p>
 
 <p><strong>Prerequisites:</strong> SDI Advanced Adventure Diver, Advanced Diver or equivalent, 25 logged open water dives, minimum age 18.</p>
 
@@ -1630,45 +1657,6 @@
 <!-- End Grid -->
 
 
-<section class="page-section dates-section" id="termine">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <p class="kicker kicker-center">Course dates</p>
-        <h2 class="section-heading">Upcoming dates</h2>
-      </div>
-    </div>
-    <ul class="dates-list" data-dates>
-      <li class="date-row" data-end="2026-10-25">
-        <div class="date-when">
-          <span class="date-label">24–25 Oct 2026</span>
-          <span class="date-wd">Sat–Sun · 2 days</span>
-        </div>
-        <div class="date-what">
-          <span class="date-title">SDI Sidemount Deepstop Schwetzingen 1 Platz frei</span>
-          
-        </div>
-        <a class="link-arrow date-ask" data-umami-event="date-ask" href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+SDI+Sidemount+Deepstop+Schwetzingen+1+Platz+frei%2C+24%E2%80%9325+Oct+2026">Ask about this date</a>
-      </li>
-    </ul>
-    <p class="dates-empty" hidden>There are no fixed dates in the calendar right now.</p>
-    <p class="dates-note">No date that suits you? <a class="link-arrow" href="/pages/contact_en.html">Ask for your preferred dates</a></p>
-  </div>
-</section>
-<script>
-  // Termine, die seit dem letzten Seitenbau vorbei sind, ausblenden
-  (function () {
-    var list = document.querySelector('[data-dates]');
-    if (!list) return;
-    var d = new Date();
-    var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-    var left = 0;
-    list.querySelectorAll('[data-end]').forEach(function (li) {
-      if (li.getAttribute('data-end') < today) li.remove(); else left++;
-    });
-    if (!left) { list.remove(); document.querySelector('.dates-empty').hidden = false; }
-  })();
-</script>
 
 
 <!--  Grid -->
