@@ -436,6 +436,23 @@ tr:nth-child(even) {
   color: white;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link.nav-lang {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 2px;
+  padding: 0.35em 0.7em;
+  margin-right: 0.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link.nav-lang:hover, #mainNav .navbar-nav .nav-item .nav-link.nav-lang:focus-visible {
+  border-color: #37b4aa;
+  color: #37b4aa;
+}
+
+@media (max-width: 991.98px) {
+  #mainNav .navbar-nav .nav-item .nav-link.nav-lang {
+    display: inline-block;
+    margin: 0.5rem auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -790,6 +807,77 @@ section#contact :-ms-input-placeholder {
   font-family: "Playfair Display", Georgia, serif;
 }
 
+section#contact .contact-lead {
+  max-width: 640px;
+  margin: -8px auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(244, 241, 235, 0.86);
+}
+section#contact .contact-after {
+  max-width: 920px;
+  margin: 56px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid rgba(244, 241, 235, 0.18);
+  text-align: center;
+}
+section#contact .contact-after-kicker {
+  color: #37b4aa;
+}
+section#contact .contact-after-kicker::before, section#contact .contact-after-kicker::after {
+  background: #37b4aa;
+}
+section#contact .contact-steps {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+section#contact .contact-steps li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  color: rgba(244, 241, 235, 0.86);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+section#contact .contact-step-no {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #37b4aa;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: #37b4aa;
+}
+section#contact .contact-direct {
+  margin: 32px 0 0;
+  color: rgba(244, 241, 235, 0.86);
+}
+section#contact .contact-direct a {
+  color: #37b4aa;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+section#contact .contact-direct span {
+  margin: 0 8px;
+  color: #8ca9b8;
+}
+
+@media (max-width: 767.98px) {
+  section#contact .contact-steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
 .footer {
   padding: 25px 0;
   text-align: center;
@@ -1040,6 +1128,15 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background: #f4f1eb;
   border-left-color: #d6d0c4;
   color: #3d5a6e;
+}
+
+.nd-wish a {
+  background: transparent;
+  border-style: dashed;
+}
+
+.nd-wish .nd-date {
+  color: #1b7069;
 }
 
 .blog-post-page #mainNav {
@@ -2228,6 +2325,63 @@ section[id], .page-section {
     letter-spacing: 0.06em;
   }
 }
+.page-section:not(.price-page) h1.section-heading {
+  text-transform: none !important;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.015em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #0d3451;
+}
+
+section#contact h1.section-heading {
+  color: #f4f1eb;
+}
+
+.page-section p.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 48px;
+  color: #3d5a6e;
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+@media (max-width: 575px) {
+  .course-path .path-step .path-img {
+    aspect-ratio: 2/1;
+  }
+  .path-body {
+    padding: 16px 16px 18px;
+  }
+  .path-step h4 {
+    font-size: 1.2rem;
+  }
+  .path-step p {
+    margin-bottom: 12px;
+  }
+  .course-extras-grid .path-step {
+    flex-direction: row;
+  }
+  .course-extras-grid .path-step .path-img {
+    flex: 0 0 92px;
+    aspect-ratio: auto;
+  }
+}
+.course-extras-grid .path-step .path-img {
+  position: relative;
+  min-height: 160px;
+}
+.course-extras-grid .path-step .path-img img {
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 767px) {
+  .course-extras-grid .path-step .path-img {
+    min-height: 0;
+  }
+}
 .price-page {
   padding-top: 40px;
 }
@@ -2408,6 +2562,14 @@ section[id], .page-section {
 }
 .price-cta-faq {
   margin: 18px 0 0;
+}
+
+.price-row small {
+  display: block;
+}
+
+.extras-list dl + .price-group-title {
+  margin-top: 32px;
 }
 
 .faq-wrap {

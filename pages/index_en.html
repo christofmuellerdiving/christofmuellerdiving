@@ -11,7 +11,7 @@
   />
   
   
-  <meta name="author" content="Christof Müller" /><meta name="description" content="Sidemount courses under SDI/TDI and GUE courses from Open Water Diver to DPV 1 near Heidelberg, Germany. Taught in English or German, in open water." />
+  <meta name="author" content="Christof Müller" /><meta name="description" content="Sidemount courses under SDI/TDI and GUE courses from Open Water Diver to DPV 1 near Heidelberg, Germany. At most three students, in open water, in English or German." />
   <link rel="canonical" href="https://www.thinking-diver.com/pages/index_en.html" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="thinking-diver.com" />
   <meta property="og:title" content="Diving courses near Heidelberg: sidemount and GUE | Christof Müller" />
-  <meta property="og:description" content="Sidemount courses under SDI/TDI and GUE courses from Open Water Diver to DPV 1 near Heidelberg, Germany. Taught in English or German, in open water." />
+  <meta property="og:description" content="Sidemount courses under SDI/TDI and GUE courses from Open Water Diver to DPV 1 near Heidelberg, Germany. At most three students, in open water, in English or German." />
   <meta property="og:url" content="https://www.thinking-diver.com/pages/index_en.html" />
   <meta property="og:image" content="https://www.thinking-diver.com/assets/img/og-default.jpg" />
   <meta property="og:locale" content="en_US" />
@@ -34,18 +34,31 @@
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="/assets/css/all.min.css?v=1790922385" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/all.min.css?v=1790927043" rel="stylesheet" type="text/css" />
 
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1790922385" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1790927043" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1790922385" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1790927043" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
+  <!-- Strukturierte Daten: Person (Startseite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christof Müller",
+    "url": "https://www.thinking-diver.com/pages/index_en.html",
+    "image": "https://www.thinking-diver.com/assets/img/about/christofabout.jpg",
+    "jobTitle": "Diving instructor (SDI/TDI sidemount, GUE)",
+    "knowsLanguage": ["de", "en"],
+    "sameAs": ["https://www.instagram.com/christof.mueller"]
+  }
+  </script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="7ced9eb1-23a8-41cd-920f-2eaacd806452"></script>
 </head>
 
@@ -70,28 +83,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
           
-
           <li class="nav-item">
-
-            
-            <label for="languageSelector" hidden>Language</label>
-            <select class="nav-link nav-select " id="languageSelector" name="languageSelector"
-              onchange="location = `/pages/index_${this.options[this.selectedIndex].value}.html`;">
-
-                
-                <option value="en" 
-                 selected="selected" >
-                  EN
-                </option>
-                
-                <option value="de" 
-                >
-                  DE
-                </option>
-                
-
-            </select>
-
+            <a class="nav-link nav-lang" href="/pages/index_de.html" lang="de" hreflang="de" aria-label="Deutsche Version" data-umami-event="nav-language">DE</a>
           </li>
           
           
@@ -121,7 +114,7 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1790922385"></script>
+  <script src="/assets/js/custom.js?v=1790927043"></script>
   <!-- End Navigation -->
 
 
@@ -135,7 +128,7 @@
     <div class="hero-copy">
       <p class="kicker">Christof Müller · SDI / TDI · GUE</p>
       <h1>Diving courses near Heidelberg.</h1>
-      <p class="hero-lead">Sidemount courses under SDI/TDI and GUE courses from Open Water Diver to DPV 1. Christof Müller teaches both in open water, in English or German.</p>
+      <p class="hero-lead">Sidemount courses under SDI/TDI, taught to the same standard of trim, buoyancy and team procedure as my GUE courses from Open Water Diver to DPV 1. At most three students, always in open water, in English or German.</p>
       <div class="hero-actions">
         <a class="btn btn-primary btn-xl" data-umami-event="hero-sidemount" href="#courses">Sidemount courses</a>
         <a class="btn btn-primary btn-xl" data-umami-event="hero-gue" href="#courses_gue">GUE courses</a>
@@ -183,6 +176,53 @@
           <span class="nd-meta">Sat–Sun · 2 days<span class="nd-ask">Enquire</span></span>
         </a>
       </li>
+      <li class="nd-item" data-end="2027-03-21">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+SDI+Sidemount++Diver%2C+20%E2%80%9321+Mar+2027" data-umami-event="date-ask-band">
+          <span class="nd-date">20–21 Mar 2027</span>
+          <span class="nd-title">SDI Sidemount  Diver</span>
+          <span class="nd-spots">3 spots left</span>
+          <span class="nd-meta">Sat–Sun · 2 days<span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-04-18">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+TDI+Sidemount+Diver%2C+17%E2%80%9318+Apr+2027" data-umami-event="date-ask-band">
+          <span class="nd-date">17–18 Apr 2027</span>
+          <span class="nd-title">TDI Sidemount Diver</span>
+          <span class="nd-spots">3 spots left</span>
+          <span class="nd-meta">Sat–Sun · 2 days<span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-05-23">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+GUE+Performance+Diver%2C+22%E2%80%9323+May+2027" data-umami-event="date-ask-band">
+          <span class="nd-date">22–23 May 2027</span>
+          <span class="nd-title">GUE Performance Diver</span>
+          
+          <span class="nd-meta">Sat–Sun · 2 days<span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-06-13">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+GUE+Basic+Fundamentals%2C+11%E2%80%9313+Jun+2027" data-umami-event="date-ask-band">
+          <span class="nd-date">11–13 Jun 2027</span>
+          <span class="nd-title">GUE Basic Fundamentals</span>
+          <span class="nd-spots">3 spots left</span>
+          <span class="nd-meta">Fri–Sun · 3 days<span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-07-18">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+am+interested+in+this+date%3A+GUE+DPV+1%2C+16%E2%80%9318+Jul+2027" data-umami-event="date-ask-band">
+          <span class="nd-date">16–18 Jul 2027</span>
+          <span class="nd-title">GUE DPV 1</span>
+          <span class="nd-spots">3 spots left</span>
+          <span class="nd-meta">Fri–Sun · 3 days<span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
+      <li class="nd-item nd-wish">
+        <a href="/pages/contact_en.html?message=Hi+Christof%2C+I+would+like+a+date+for+the+following+course%3A+" data-umami-event="date-wish-band">
+          <span class="nd-date">Preferred date</span>
+          <span class="nd-title">If none of the dates suit you, suggest your own.</span>
+          <span class="nd-meta"><span></span><span class="nd-ask">Enquire</span></span>
+        </a>
+      </li>
     </ul>
     <a class="link-arrow nd-all" href="/pages/termine_en.html" data-umami-event="dates-all">All dates</a>
   </div>
@@ -195,7 +235,7 @@
     var d = new Date();
     var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
     list.querySelectorAll('[data-end]').forEach(function (li) { if (li.getAttribute('data-end') < today) li.remove(); });
-    if (!list.children.length) document.getElementById('naechste-termine').remove();
+    if (!list.querySelectorAll('[data-end]').length) document.getElementById('naechste-termine').remove();
     // "Nächster Termin" auf den Kurskarten ausblenden, wenn er vorbei ist
     document.querySelectorAll('[data-next-end]').forEach(function (p) { if (p.getAttribute('data-next-end') < today) p.remove(); });
   })();
@@ -234,7 +274,7 @@
 
     
     <div class="section-intro">
-      <p>Christof teaches his sidemount courses to the same standard of trim, buoyancy and team procedure as his GUE courses. Certification is through SDI and TDI. The course path shows a sensible order from a first try to a full tech configuration, and DPV, Advanced Nitrox and Decompression Procedures can be added alongside.</p>
+      <p>I teach my sidemount courses to the same standard of trim, buoyancy and team procedure as my GUE courses. Certification is through SDI and TDI. The course path shows the order from a first try to a full tech configuration, and DPV, Advanced Nitrox and Decompression Procedures can be added alongside.</p>
 
     </div>
     
@@ -258,11 +298,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Try it</span></div>
     <h4>Try dive sidemount</h4>
-    <p>Test sidemount before you buy gear. The configuration is fitted to you, S-drill on land, then an honest assessment.</p>
+    <p>Test sidemount before you buy gear. I fit the configuration to you, we practise the S-drill on land, then you get an honest assessment.</p>
     
     <div class="path-facts">
       <span>Half day</span>
-      <span class="path-price">149 €</span>
+      <span class="path-price">€149</span>
     </div>
     
     
@@ -288,11 +328,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Entry</span></div>
     <h4>SDI Sidemount Diver</h4>
-    <p>Sidemount equipment, weighting, gas management with two cylinders and problem solving. No decompression.</p>
+    <p>For recreational sidemount: equipment, weighting, gas management with two cylinders and problem solving. No decompression, down to 40 m.</p>
     
     <div class="path-facts">
       <span>2 days</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €505</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, age 18 (15 with parental consent)</p>
@@ -319,11 +359,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Tech entry</span></div>
     <h4>TDI Intro to Tech</h4>
-    <p>The foundations of technical diving, taught by Christof in sidemount.</p>
+    <p>The foundations of technical diving without decompression, taught in sidemount. Can be combined with Advanced Nitrox.</p>
     
     <div class="path-facts">
       <span>3 days</span>
-      <span class="path-price">from 675 €</span>
+      <span class="path-price">from €740</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, 25 logged dives, age 18 (15 with consent)</p>
@@ -349,14 +389,15 @@
   <div class="path-body">
     <div class="path-meta"><span>Tech sidemount</span></div>
     <h4>TDI Sidemount Diver</h4>
-    <p>For technical divers: finning techniques, problem solving, restrictions and optionally carrying additional cylinders.</p>
+    <p>For sidemount on decompression dives too: finning techniques, problem solving, restrictions and optional extra cylinders.</p>
     
     <div class="path-facts">
       <span>2 days</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €505</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, age 18</p>
+    <p class="path-next" data-next-end="2027-04-18">Next date: 17–18 Apr 2027 · 3 spots left</p>
     <span class="link-arrow">Details</span>
   </div>
 </a>
@@ -406,11 +447,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Add-on</span></div>
     <h4>SDI DPV</h4>
-    <p>Handling, planning and team diving with a scooter. With Christof also in sidemount.</p>
+    <p>Handling, planning and team diving with a scooter. I teach it in sidemount too.</p>
     
     <div class="path-facts">
       <span>2 days</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €505</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, age 18 (15 with consent)</p>
@@ -440,7 +481,7 @@
     
     <div class="path-facts">
       <span>2 days</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €505</span>
     </div>
     
     <p class="path-prereq">Nitrox Diver, 25 logged dives, age 18 (15 with consent)</p>
@@ -461,7 +502,7 @@
 <a class="path-step  path-extra" data-bs-toggle="modal" href="#tdideco7"
    data-umami-event="course-card" data-umami-event-course="tdideco">
   <div class="path-img">
-    <img src="/assets/img/courses/tdi-intro-full.jpg" alt="TDI Decompression Procedures" loading="lazy" />
+    <img src="/assets/img/about/christof-wide.jpg" alt="TDI Decompression Procedures" loading="lazy" />
   </div>
   <div class="path-body">
     <div class="path-meta"><span>Deco</span></div>
@@ -470,7 +511,7 @@
     
     <div class="path-facts">
       <span>3 days</span>
-      <span class="path-price">from 675 €</span>
+      <span class="path-price">from €740</span>
     </div>
     
     <p class="path-prereq">Advanced Diver, 25 logged dives, age 18+</p>
@@ -528,9 +569,9 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/trydive-sidemount.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Try dive sidemount"
                 />
-                <p><p>Interested in sidemount or double tanks but not sure it’s for you? A try dive lets you test the equipment before you buy it. You get to know the configuration in detail, it is adjusted to fit you, and on land you practise safety techniques such as the S-drill and V-drill. After the dive you talk through how it felt and get an assessment of your skills.</p>
+                <p><p>A try dive lets you test sidemount or double tanks before you buy any equipment. You get to know the configuration in detail, I fit it to you, and on land we practise safety techniques such as the S-drill and V-drill. After the dive we talk through how it felt and you get my assessment of your skills.</p>
 
 <p>Duration: at least half a day. Equipment is included in the price.</p>
 </p>
@@ -590,11 +631,13 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-sidemount-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="SDI Sidemount Diver"
                 />
-                <p><p>Your entry into sidemount diving. You learn to handle sidemount equipment safely, manage gas with two independent cylinders, share gas and run the sidemount-specific S-drill. Christof advises you on equipment and fits it to you.</p>
+                <p><p>Your entry into recreational sidemount diving. You learn to handle sidemount equipment safely, manage gas with two independent cylinders, share gas and run the sidemount-specific S-drill. I advise you on equipment and fit it to you.</p>
 
-<p><strong>Format:</strong> at least 2 open water dives, run by Christof over 2 days. No decompression, maximum 40 m or the limit of your certification.</p>
+<p><strong>Format:</strong> at least 2 open water dives, over 2 days with me. No decompression, maximum 40 m or the limit of your certification.</p>
+
+<p><strong>SDI or TDI:</strong> if you want to use sidemount on decompression dives later, TDI Sidemount Diver is the better fit.</p>
 
 <p><strong>Prerequisites:</strong> SDI Open Water Scuba Diver or equivalent, minimum age 18 (15 with parental consent).</p>
 
@@ -656,14 +699,17 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-intro-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="TDI Intro to Tech"
                 />
-                <p>
-<p>The Intro to Tech Diving course from TDI offers the ideal introduction to technical diving for trained divers. Here you will learn the basic skills of dive planning, buoyancy, trim, balance, finning, gas planning, and emergency procedures. Your instructor will help you optimize your equipment settings for both backmount and sidemount diving. Christof runs the course over 3 days. The standard requires at least 3 dives, no deeper than 23 m, and at least 6 hours of classroom and briefings.</p>
+                <p><p>Intro to Tech is the step into technical diving for certified divers, strictly without decompression. You work on dive planning, buoyancy, trim and balance, finning, gas planning and emergency procedures in a technical configuration. I teach the course in sidemount and set up your kit with you.</p>
+
+<p><strong>Format:</strong> 3 days with me. The standard requires at least 3 dives, no deeper than 23 m, and at least 6 hours of classroom and briefings.</p>
+
+<p><strong>Combination:</strong> taught together with TDI Advanced Nitrox, the standard requires 4 dives for both courses. Decompression Procedures is the next step.</p>
 
 <p><strong>Prerequisites:</strong> SDI Open Water Scuba Diver or equivalent, 25 logged open water dives, minimum age 18 (15 with parental consent).</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_03_Intro_to_Tech_Diver.pdf?lang=de" target="_blank">Further information</a></p>
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_03_Intro_to_Tech_Diver.pdf?lang=de" target="_blank">TDI standard Intro to Tech (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -721,11 +767,11 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-sidemount-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="TDI Sidemount Diver"
                 />
-                <p><p>The TDI course is for technical divers who want to add sidemount to their tool kit. Compared with the SDI course it adds advanced skills and drills such as different finning techniques. Carrying additional cylinders is optional. Theory covers problem solving and diving through restrictions, among other topics.</p>
+                <p><p>The TDI course is for divers who want to use sidemount in technical diving as well. After the course you may dive sidemount with safety and decompression stops, as far as your other certifications allow. Compared with the SDI course it adds advanced skills and drills such as different finning techniques. Carrying additional cylinders is optional. Theory covers problem solving and diving through restrictions, among other topics.</p>
 
-<p><strong>Format:</strong> at least 2 days and 3 open water dives with a total bottom time of at least 90 minutes. 4 hours of classroom and briefings are suggested.</p>
+<p><strong>Format:</strong> at least 2 days and 3 open water dives with a total bottom time of at least 90 minutes. 4 hours of classroom and briefings are suggested. Can be combined with Advanced Nitrox (4 dives in total) and with Decompression Procedures.</p>
 
 <p><strong>Prerequisites:</strong> SDI Open Water Scuba Diver or equivalent, minimum age 18.</p>
 
@@ -787,12 +833,15 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-dpv-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="SDI DPV"
                 />
-                <p>
-<p>This course, which lasts at least two days, trains divers in the use of a DPV (diver propulsion vehicle) and teaches them the specific skills, dive planning, procedures, and techniques. Possible problems and dangers of diving with a DPV are also discussed, as well as how to avoid them.</p>
+                <p><p>On the SDI DPV course you learn to handle a scooter (DPV, diver propulsion vehicle) safely: handling, dive planning, procedures and techniques. We go through the typical problems and hazards of diving with a DPV and how to avoid them. I teach the course in sidemount as well.</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/SDI/part%203/pdf/individual/12_DPV_Diver.pdf?lang=de" target="_blank">Further information</a></p>
+<p><strong>Format:</strong> 2 days with me, at least 2 dives.</p>
+
+<p><strong>Prerequisites:</strong> SDI Open Water Scuba Diver or equivalent, minimum age 18 (15 with parental consent).</p>
+
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/SDI/part%203/pdf/individual/12_DPV_Diver.pdf?lang=de" target="_blank">SDI standard DPV Diver (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -850,18 +899,17 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-adv-nitrox.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="TDI Advanced Nitrox"
                 />
-                <p>
-<p>The Advanced Nitrox course from TDI teaches you everything you need to know to safely use Enriched Air up to 100% oxygen. It is aimed at divers who want to plan bottom times and decompression with oxygen-rich mixes. It is the first step towards decompression diving.</p>
+                <p><p>On TDI Advanced Nitrox you learn to use mixes from 21 to 100 % oxygen safely. The course is for divers who want to plan bottom time and decompression with oxygen-rich mixes, and it is the first step towards decompression diving.</p>
 
-<p>What you will learn: gas management, dive planning, equipment configuration, and skills, especially ascents and problem solving while maintaining your position within the team.</p>
+<p><strong>What you learn:</strong> gas management, dive planning, equipment configuration and skills, especially ascents and problem solving while keeping your position in the team.</p>
 
-<p><strong>Format:</strong> 4 dives with a total bottom time of at least 100 minutes, at least 6 hours of classroom. Can be combined with Intro to Tech or TDI Sidemount.</p>
+<p><strong>Format:</strong> 4 dives with a total bottom time of at least 100 minutes, at least 6 hours of classroom. Combined with Intro to Tech or TDI Sidemount, 4 dives cover both courses.</p>
 
-<p><strong>Prerequisites:</strong> TDI Nitrox Diver or equivalent, 25 logged open water dives, minimum age 18 (15 with parental consent). Intro to Tech is recommended but not required.</p>
+<p><strong>Prerequisites:</strong> TDI Nitrox Diver or equivalent, 25 logged open water dives, minimum age 18 (15 with parental consent). I recommend Intro to Tech first, but it is not required.</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_07_Advanced_Nitrox_Diver.pdf" target="_blank">Further information</a></p>
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_07_Advanced_Nitrox_Diver.pdf" target="_blank">TDI standard Advanced Nitrox (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -918,11 +966,10 @@
                 </div>
                 <img
                   class="img-fluid d-block mx-auto"
-                  src="/assets/img/courses/tdi-intro-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  src="/assets/img/about/christof-wide.jpg" loading="lazy" decoding="async"
+                  alt="TDI Decompression Procedures"
                 />
-                <p>
-<p>This course covers the theory, planning and execution of planned staged decompression dives to a maximum of 45 metres. Decompression is done on nitrox or oxygen, as far as the mix is covered by your certification, which is why the course is often combined with Advanced Nitrox.</p>
+                <p><p>This course covers the theory, planning and execution of planned staged decompression dives to a maximum of 45 metres. Decompression is done on nitrox or oxygen, as far as the mix is covered by your certification, which is why the course is often combined with Advanced Nitrox.</p>
 
 <p><strong>What you practise:</strong> gas planning based on your own and your team’s consumption, an exact decompression profile, carrying, dropping and retrieving the stage cylinder, gas switches as a team, deploying an SMB solo and as a team, controlled ascents on an SMB or line, deploying a backup mask and responding to a gas loss.</p>
 
@@ -930,7 +977,7 @@
 
 <p><strong>Prerequisites:</strong> SDI Advanced Adventure Diver, Advanced Diver or equivalent, 25 logged open water dives, minimum age 18.</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_08_Decompression_Procedures_Diver.pdf" target="_blank">Further information</a></p>
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_08_Decompression_Procedures_Diver.pdf" target="_blank">TDI standard Decompression Procedures (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -989,7 +1036,7 @@
 
     
     <div class="section-intro">
-      <p>GUE trains divers to uniform standards for equipment, procedures and teamwork, from the first dive into technical diving. Christof has taught GUE courses since 2018, from Open Water Diver through Fundamentals and primers to DPV 1.</p>
+      <p>GUE trains divers to uniform standards for equipment, procedures and teamwork, from the first dive into technical diving. I have taught GUE courses since 2018, from Open Water Diver through Fundamentals and primers to DPV 1.</p>
 
     </div>
     
@@ -1017,7 +1064,7 @@
     
     <div class="path-facts">
       <span>5 days</span>
-      <span class="path-price">from 1,125 €</span>
+      <span class="path-price">from €1,175</span>
     </div>
     
     <p class="path-prereq">No diving experience needed, age 12+</p>
@@ -1047,7 +1094,7 @@
     
     <div class="path-facts">
       <span>6 days</span>
-      <span class="path-price">from 1,350 €</span>
+      <span class="path-price">from €1,410</span>
     </div>
     
     <p class="path-prereq">GUE entry course, 15 dives since, age 16+, BLS</p>
@@ -1077,10 +1124,11 @@
     
     <div class="path-facts">
       <span>2 to 4 days</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €470</span>
     </div>
     
     
+    <p class="path-next" data-next-end="2027-05-23">Next date: 22–23 May 2027</p>
     <span class="link-arrow">Details</span>
   </div>
 </a>
@@ -1107,10 +1155,11 @@
     
     <div class="path-facts">
       <span>3 days</span>
-      <span class="path-price">from 675 €</span>
+      <span class="path-price">from €705</span>
     </div>
     
     <p class="path-prereq">GUE entry course, 75 dives, age 16</p>
+    <p class="path-next" data-next-end="2027-07-18">Next date: 16–18 Jul 2027 · 3 spots left</p>
     <span class="link-arrow">Details</span>
   </div>
 </a>
@@ -1161,7 +1210,7 @@
     
     <div class="path-facts">
       <span>2 days</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €470</span>
     </div>
     
     <p class="path-prereq">GUE entry course, 15 dives since</p>
@@ -1182,16 +1231,16 @@
 <a class="path-step  path-extra" data-bs-toggle="modal" href="#morecourses6"
    data-umami-event="course-card" data-umami-event-course="morecourses">
   <div class="path-img">
-    <img src="/assets/img/courses/doubles.jpg" alt="GUE other Primer courses" loading="lazy" />
+    <img src="/assets/img/courses/doubles.jpg" alt="Other GUE primers" loading="lazy" />
   </div>
   <div class="path-body">
     <div class="path-meta"><span>Primer</span></div>
-    <h4>GUE other Primer courses</h4>
+    <h4>Other GUE primers</h4>
     <p>Doubles, Drysuit, Deep and Rescue Primer: configuration and skills for the next step.</p>
     
     <div class="path-facts">
       <span>depends on primer</span>
-      <span class="path-price">from 450 €</span>
+      <span class="path-price">from €470</span>
     </div>
     
     
@@ -1255,11 +1304,11 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/perfomance.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Open Water Diver"
                 />
                 <p><p>GUE Open Water Diver is the entry course for non-divers. From the first session you learn what every GUE course builds on: stable buoyancy, horizontal trim, efficient propulsion and diving as a team. Nitrox and gas analysis are part of the course.</p>
 
-<p>The course normally runs over five days. It includes at least ten confined water sessions, six open water dives and at least 40 hours of instruction, made up of theory, land drills and in-water training. Every skill is introduced in shallow, calm water first, and Christof uses the lake for this rather than a swimming pool.</p>
+<p>The course normally runs over five days. It includes at least ten confined water sessions, six open water dives and at least 40 hours of instruction, made up of theory, land drills and in-water training. Every skill is introduced in shallow, calm water first, and I use the lake for this rather than a swimming pool.</p>
 
 <p>Maximum depth during the course is 21 metres, and all dives stay within no-decompression limits. In the water there are at most three students per instructor, and the course can also run with a single student.</p>
 
@@ -1323,7 +1372,7 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tech-fundi-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Advanced Open Water Diver"
                 />
                 <p><p>GUE Advanced Open Water Diver prepares you for deeper recreational diving. The course covers decompression theory and correct ascents, rescue on land, at the surface and underwater, emergency management, and navigation with compass, guideline and natural features. Nitrox extends bottom time; triox, if you choose it, reduces narcosis and gas density.</p>
 
@@ -1391,37 +1440,25 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/fundies.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Fundamentals"
                 />
-                <p><p>The Fundamentals allows divers of all levels to improve their skills and prepares them for their future diving life and, if applicable, a safe introduction to technical diving. Since 2025 a new course structure divides the Fundamentals course into three courses.</p>
+                <p><p>Since standards v10, the former Fundamentals has been split into three courses: Performance Diver, Basic Fundamentals and Technical Fundamentals. All three work on buoyancy, trim, balance, propulsion and team diving, each with a different goal.</p>
 
-<p><br /></p>
+<p><img src="/assets/img/courses/perfomance.jpg" alt="GUE Performance Diver" class="img-fluid d-block mx-auto" /></p>
 
-<h3 id="performance-diver">Performance Diver</h3>
+<p><strong>Performance Diver:</strong> for divers with a first certification (OWD or similar) who want to consolidate their core skills, whether or not they plan to go technical. Two days, four dives. Diving with nitrox is part of it.</p>
 
-<p><img src="/assets/img/courses/perfomance.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/performance-diver" target="_blank">GUE Performance Diver</a></p>
 
-<p>You have completed your initial scuba training (OWD or similar) and would like to refine and consolidate your diving skills. Then the Performance Diver course is for you. It is aimed at all divers, regardless of whether they want to pursue technical diving or not. This two-day course (4 dives) will help you refine your basic skills (buoyancy, trim, balance, fin kicks, teamwork). You will also learn how to dive with Nitrox.</p>
+<p><strong>Basic Fundamentals:</strong> the way into further GUE training, such as the primers. You get to know GUE’s configuration and way of working and build a solid set of skills. The course runs in a single tank or doubles, and in a drysuit if you have experience in one.</p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Performance-Standards-v10.1.pdf" target="_blank">More information</a></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/basic-fundamentals" target="_blank">GUE Basic Fundamentals</a></p>
 
-<p><br /></p>
+<p><img src="/assets/img/courses/tech-fundi-full.jpg" alt="GUE Technical Fundamentals" class="img-fluid d-block mx-auto" /></p>
 
-<h3 id="basic-fundamentals">Basic Fundamentals</h3>
+<p><strong>Technical Fundamentals:</strong> for experienced divers aiming for further courses in technical, rebreather or cave diving. Prerequisites include a certification to 30 metres, 75 non-training dives and 25 dives in doubles.</p>
 
-<p>The Basic Fundamentals course is your introduction to further diving courses with GUE (primer courses). It allows non-GUE divers to learn about the configuration and mindset of GUE and to develop a solid foundation of skills. No matter where you are in your diving, the Fundamentals course will help you become a better diver. The course can be completed with either single or double tanks and optionally in a dry suit (experience required).</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/BasicFund-Standards-v10.1.pdf" target="_blank">More information</a></p>
-
-<p><br /></p>
-
-<h3 id="technical-fundamentals">Technical Fundamentals</h3>
-
-<p><img src="/assets/img/courses/tech-fundi-full.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
-
-<p>The Technical Fundamentals course is aimed at experienced divers who are interested in advanced courses in technical, rebreather, or cave diving. Prerequisites include certification to 30 meters, 75 non-training dives and 25 dives with doubles.</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/TechFund-Standards-v10.1.pdf" target="_blank">More information</a></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/technical/technical-fundamentals" target="_blank">GUE Technical Fundamentals</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -1479,12 +1516,15 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/dpv-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE DPV 1"
                 />
-                <p>
-<p>Every diver knows the feeling of wanting to dive a little further. A DPV allows you to reach different dive sites or spend more time at your dive destination, e.g. a wreck. In this 3-day course (min. 5 dives), you will learn how to use a DPV safely, how to plan your gas consumption, and you will practice all skills and emergency scenarios with a DPV. Prerequisites: GUE Open Water Diver, Performance Diver or Fundamentals, at least 25 non-training dives since, at least 75 dives in total, minimum age 16.</p>
+                <p><p>A DPV lets you reach sites further away or spend more time at your objective, a wreck for example. On GUE DPV 1 you learn to handle the scooter safely and plan the gas that goes with it, and you train skills and emergency procedures as a team.</p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/DPV1-Standards-v10.1.pdf" target="_blank">Further information</a></p>
+<p><strong>Format:</strong> 3 days, at least 5 dives.</p>
+
+<p><strong>Prerequisites:</strong> GUE Open Water Diver, Performance Diver or Fundamentals, followed by at least 25 non-training dives, at least 75 dives in total, minimum age 16.</p>
+
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/foundational/dpv-1" target="_blank">GUE DPV 1</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -1542,11 +1582,15 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/nav-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Navigation Primer"
                 />
-                <p><p>Autonomous divers should be able to find their way underwater. In this course, you will learn about natural navigation, as well as using a compass and a map. You will also learn how to work with lines, and at the end of the course, you will be able to create a map on your own. The core of Christof Müller’s course is learning how to plan and execute a dive in a reproducible manner. This will allow you to truly explore the underwater world. The Navigation Primer is a two-day course with at least three dives, including one dive in reduced ambient light conditions, for example a night dive. Prerequisites: GUE Open Water Diver, Performance Diver or Fundamentals, plus at least 15 dives since.</p>
+                <p><p>Autonomous divers should be able to find their way underwater. On the Navigation Primer you learn natural navigation, compass and map navigation and line work, and by the end you draw a map of your own. With me, the focus is on planning and running a dive in a way you can repeat.</p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Navigation-Standards-v10.1.pdf" target="_blank">Further information</a></p>
+<p><strong>Format:</strong> 2 days, at least 3 dives, including one in reduced ambient light, for example a night dive.</p>
+
+<p><strong>Prerequisites:</strong> GUE Open Water Diver, Performance Diver or Fundamentals, plus at least 15 dives since.</p>
+
+<p><a href="https://www.gue.com/diver-training/standards-and-procedures" target="_blank">GUE standards</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -1598,49 +1642,34 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <div class="text-center">
-                  <h2>GUE other Primer courses</h2>
+                  <h2>Other GUE primers</h2>
                   <p class="item-intro text-muted"></p>
                 </div>
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/doubles.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Other GUE primers"
                 />
-                <p>
-<h2 id="doubles-primer">Doubles Primer</h2>
+                <p><p><strong>Doubles Primer:</strong> an introduction to the GUE doubles configuration and the skills and drills that go with it.</p>
 
-<p>An introduction to the GUE configuration of doubles and the necessary skills and drills.</p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/doubles-primer" target="_blank">GUE Doubles Primer</a></p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Doubles-Standards-v10.1.pdf" target="_blank">More information</a></p>
+<p><strong>Drysuit Primer:</strong> safe use of a drysuit. The course normally takes one day.</p>
 
-<p><br /></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/drysuit-primer" target="_blank">GUE Drysuit Primer</a></p>
 
-<h2 id="drysuit-primer">Drysuit Primer</h2>
+<p><strong>Deep Primer:</strong> an introduction to deeper dives on Nitrox 32 or Triox 30/30.</p>
 
-<p>Learn how to dive safely with a drysuit. The course normally runs over one day.</p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/deep-primer" target="_blank">GUE Deep Primer</a></p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Drysuit-Standards-v10.1.pdf" target="_blank">More information</a></p>
+<p><strong>Rescue Primer:</strong> core rescue skills and emergency management for divers.</p>
 
-<p><br /></p>
-
-<h2 id="deep-primer">Deep Primer</h2>
-
-<p>The Deep primer is your introduction to deeper dives using Nitrox 32 or Trios 30/30.</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Deep-Standards-v10.1.pdf" target="_blank">More information</a></p>
-
-<p><br /></p>
-
-<h2 id="rescue-primer">Rescue Primer</h2>
-
-<p>The Rescue Primer teaches basic rescue skills and emergency management for divers.</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Rescue-Standards-v10.1.pdf" target="_blank">Further information</a></p>
+<p><a href="https://www.gue.com/diver-training/standards-and-procedures" target="_blank">GUE standards</a></p>
 </p>
                 
                 <div class="modal-cta">
                   <a class="btn btn-primary btn-xl" data-umami-event="modal-enquiry" data-umami-event-course="morecourses6"
-                     href="/pages/contact_en.html?message=Hi+Christof%2C+I%27m+interested+in%3A+GUE+other+Primer+courses">Enquire about this course</a>
+                     href="/pages/contact_en.html?message=Hi+Christof%2C+I%27m+interested+in%3A+Other+GUE+primers">Enquire about this course</a>
                   <a class="link-arrow" href="/pages/price_en.html">Prices</a>
                   <a href="#" class="modal-back" data-bs-dismiss="modal">Back</a>
                 </div>
@@ -1730,7 +1759,7 @@
       <img
         class="mx-auto rounded-circle"
         src="/assets/img/about/christofabout.jpg" loading="lazy"
-        alt=""
+        alt="More about Christof"
       />
     </a>
     <p class="text-muted">Diving instructor at Deepstop Schwetzingen. Thousands of dives in lakes and mines, the Mediterranean and the cenotes of Mexico. Trained with GUE, TDI, ISE and PSAI up to Full Cave and Cave CCR.</p>
@@ -1757,7 +1786,7 @@
 
 
     <div class="fact-row">
-      <div><strong>SDI / TDI</strong><span>Sidemount instructor</span></div><div><strong>GUE</strong><span>Instructor since 2018</span></div><div><strong>Deepstop</strong><span>since 2017</span></div>
+      <div><strong>DE · EN</strong><span>Teaching languages</span></div><div><strong>Since 2017</strong><span>Instructor at Deepstop</span></div><div><strong>Full Cave · CCR</strong><span>Own training</span></div>
     </div>
 
   </div>
@@ -1801,28 +1830,23 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/about/christofabout-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Christof Müller"
                 />
-                <p><p>Christof is a seasoned trainer, both in his main job as an IT consultant and trainer with over 25 years of experience and as a diving instructor. Here his passion and focus is to prepare his students for the challenges of technical diving. He does so both within <strong>GUE</strong> as well as in <strong>SDI / TDI</strong> when it comes to sidemount diving. He trains both newcomers and experienced technical divers.
-<br />
-<br />
-He himself has logged <strong>thousands of dives in cold water</strong> here in Germany (lakes &amp; mines), as well as in <strong>warmer waters</strong> (Malta, Gozo, Croatia) and especially in the cenotes of Mexico, where he completed his cave training up to <strong>CCR full cave</strong>. The complete list of certifications as a diver can be found below. He has logged over 200 hours on the Kiss Sidewinder (CCR) since 2021 and also dives both in sidemount and backmount doubles in open circuit. He completed his own technical training with GUE, TDI, ISE, and PSAI.</p>
+                <p><p>Christof has worked as an IT trainer and consultant for more than 25 years and has taught diving for many years. Underwater he prepares divers for the demands of technical diving, on the <strong>GUE</strong> path and in <strong>sidemount under SDI/TDI</strong>, from newcomers to experienced technical divers.</p>
 
-<p><img src="/assets/img/about/sidewinder-mexico.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p>He has logged many thousands of dives in cold water in Germany (lakes and mines), in warmer waters (Malta, Gozo, Croatia) and above all in the cenotes of Mexico, where he did his cave training up to Full Cave and Cave CCR. He has more than 200 hours on the KISS Sidewinder since 2021 and dives sidemount (OC) and backmount doubles in his own time. His own technical training was with GUE, TDI, ISE and PSAI. That experience feeds into his teaching; he does not teach cave courses.</p>
 
-<p><br />
-As a diving instructor, he will guide you through GUE’s Fundamentals, DPV1, or Navigation Primer courses, as well as SDI and TDI sidemount courses, Intro to Tech and Advanced Nitrox. You can find the complete list and further information under “Courses.”
-<br />
-<br />
-Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen</strong>. He is happy to advise you with regards to equipment and training and is the shop’s specialist for all things sidemount. As such, he is happy to adjust your new sidemount system for you. Deepstop also serves as his base for all courses. The proximity to various lakes further simplifies organization and ensures that everything runs smoothly.</p>
+<p><img src="/assets/img/about/sidewinder-mexico.jpg" alt="Christof with the KISS Sidewinder in a cenote in Mexico" class="img-fluid d-block mx-auto" /></p>
 
-<p><img src="/assets/img/about/deepstop.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p>As an instructor he takes you through GUE courses from Open Water Diver via Fundamentals and primers to DPV 1, and through the sidemount courses under SDI and TDI up to Intro to Tech and Decompression Procedures. All courses are listed on the home page under sidemount and GUE.</p>
 
-<p>Christof loves and lives technical diving and can show you many valuable tips and tricks. His philosophy as an instructor is to train thinking divers. This means you will not only acquire a solid foundation of skills that you can build on in your technical diving courses, but also develop a genuine understanding of the theory, which will enable you to make your own decisions. His own diving goes up to full cave and rebreather, and that experience feeds into his teaching.</p>
+<p>Several days a month Christof is at <strong>Deepstop in Schwetzingen</strong>, where he advises customers in the shop, is the contact for sidemount systems and sets them up. Deepstop is also the base for his courses: theory in the training room, with the local lakes a short drive away.</p>
 
-<h6 id="certifications-as-a-diver-technical-diving">Certifications as a diver (technical diving)</h6>
+<p><img src="/assets/img/about/deepstop.jpg" alt="Deepstop Schwetzingen" class="img-fluid d-block mx-auto" /></p>
 
-<p><img src="/assets/img/about/pic4.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<h6 id="own-training-technical-diving">Own training (technical diving)</h6>
+
+<p><img src="/assets/img/about/pic4.jpg" alt="Christof underwater in a drysuit" class="img-fluid d-block mx-auto" /></p>
 
 <ul>
   <li>GUE Gas Blender</li>
@@ -1836,29 +1860,14 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
   <li>PSAI Cave CCR</li>
 </ul>
 
-<h6 id="certifications-as-an-instructor">Certifications as an instructor</h6>
+<h6 id="instructor-ratings">Instructor ratings</h6>
 
-<p><img src="/assets/img/about/pic5.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p><img src="/assets/img/about/pic5.jpg" alt="Christof teaching" class="img-fluid d-block mx-auto" /></p>
 
 <ul>
-  <li>GUE:
-    <ul>
-      <li>GUE Technical Fundamentals Instructor</li>
-      <li>GUE DPV Diver 1 Instructor</li>
-      <li>GUE Advanced Open Water Diver Instructor</li>
-      <li>GUE Doubles Primer Instructor</li>
-      <li>GUE Drysuit Primer Instructor</li>
-    </ul>
-  </li>
-  <li>TDI:
-    <ul>
-      <li>Intro to Tech Instructor</li>
-      <li>Technical Sidemount Instructor</li>
-      <li>DPV Instructor</li>
-      <li>Advanced Nitrox Instructor</li>
-    </ul>
-  </li>
-  <li>SDI Open Water Instructor</li>
+  <li>GUE: Open Water Diver, Advanced Open Water Diver, Fundamentals, DPV 1</li>
+  <li>TDI: Intro to Tech, Sidemount, Advanced Nitrox, Decompression Procedures</li>
+  <li>SDI: Open Water Scuba Diver, Sidemount, DPV</li>
 </ul>
 </p>
                 
@@ -1901,7 +1910,7 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
       
       <div class="teaching-item">
         <h4>Your gear gets fitted</h4>
-        <p>Before the first dive your equipment is checked and adjusted to you. Missing items can be rented.</p>
+        <p>Before the first dive I check your equipment and adjust it to you. Missing items can be rented.</p>
         
       </div>
       
@@ -1913,7 +1922,7 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
       
       <div class="teaching-item">
         <h4>Personal training</h4>
-        <p>No new course needed: based on video analysis, Christof works with you on specific skills.</p>
+        <p>No new course needed: based on video analysis, I work with you on specific skills.</p>
         <a class="link-arrow" data-bs-toggle="modal" href="#personaltraining">More about personal training</a>
       </div>
       
@@ -1955,9 +1964,11 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/privelesson.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Personal training"
                 />
-                <p><p>It doesn’t always have to be a new course. Sometimes it’s just helpful to work on specific skills with an experienced trainer. Based on a video analysis of your specific problems and deficits, Christof will help you improve your diving skills and achieve your personal goals.</p>
+                <p><p>Not every goal needs a new course. In personal training we work on specific skills. The basis is a video analysis of your dives: we look at where things go wrong, and I show you how to fix them. We agree on the content beforehand.</p>
+
+<p><strong>Price:</strong> half day €100, full day €225, plus gas and lake entry.</p>
 </p>
                 
                 <div class="modal-cta">
@@ -2085,24 +2096,24 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
     <div class="post-grid">
       
       <a class="post-card is-featured" href="/2026/06/03/Backmount-or-Sidemount-The-Wrong-Question.html">
-        <div class="post-img"><img src="/assets/img/blog/f8509596-1425-4609-a389-666790551c6d.jpeg" alt="" loading="lazy" /></div>
+        <div class="post-img"><img src="/assets/img/blog/thumb/f8509596-1425-4609-a389-666790551c6d.jpg" alt="" loading="lazy" /></div>
         <p class="post-date">Start here · 03.06.2026</p>
-        <h4>Backmount or Sidemount – The wrong question</h4>
+        <h4>Backmount or Sidemount: The wrong question</h4>
         <p>“Every system is a tool. Forget that, and you’ll end up buying the wrong hammer.”</p>
       </a>
       
       <a class="post-card" href="/2026/08/18/08-26-The-Art-of-Slowing-Down.html">
-        <div class="post-img"><img src="/assets/img/blog/slowissmooth.jpg" alt="" loading="lazy" /></div>
+        <div class="post-img"><img src="/assets/img/blog/thumb/slowissmooth.jpg" alt="" loading="lazy" /></div>
         <p class="post-date">18.08.2026</p>
         <h4>The Art of Slowing Down</h4>
         <p>Slow is smooth, smooth is fast. Why real speed comes from awareness, not from hurry</p>
       </a>
       
       <a class="post-card" href="/2026/07/27/silent-rituals-of-divers-en.html">
-        <div class="post-img"><img src="/assets/img/blog/silent-rituals-of-divers.jpg" alt="" class="is-contain" loading="lazy" /></div>
+        <div class="post-img"><img src="/assets/img/blog/thumb/silent-rituals-of-divers.jpg" alt="" class="is-contain" loading="lazy" /></div>
         <p class="post-date">27.07.2026</p>
         <h4>Silent Rituals of Divers</h4>
-        <p>Why the silent ritual of warriors belongs in cave and technical diving – and what it has to do with your pre-dive...</p>
+        <p>Why the silent ritual of warriors belongs in cave and technical diving, and what it has to do with your pre-dive check....</p>
       </a>
       
     </div>
@@ -2123,7 +2134,7 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
       <div class="col-lg-5 mb-4 mb-lg-0 text-center">
         <a data-bs-toggle="modal" href="#xdeepModal" style="cursor:pointer;">
           <img
-            src="/assets/img/x-deep-christof-muller-sidemount-set.png" loading="lazy"
+            src="/assets/img/x-deep-christof-muller-sidemount-set.jpg" loading="lazy"
             alt="XDEEP Stealth Tec Christof Müller Set"
             class="img-fluid rounded shadow-sm"
           />
@@ -2165,12 +2176,12 @@ Several days a month, you can find Christof at <strong>Deepstop in Schwetzingen<
               <div class="text-center">
                 <h2 class="text-uppercase">XDEEP Stealth Tec Christof Müller Set</h2>
               </div>
-              <img class="img-fluid d-block mx-auto" loading="lazy" src="/assets/img/x-deep-christof-muller-sidemount-set.png" alt="XDEEP Stealth Tec Christof Müller Set" />
+              <img class="img-fluid d-block mx-auto" loading="lazy" src="/assets/img/x-deep-christof-muller-sidemount-set.jpg" alt="XDEEP Stealth Tec Christof Müller Set" />
               <div class="mt-4"><p>This upgrade set for the XDEEP Stealth was developed not to change the existing concept, but to optimize it in a targeted way.</p>
 
 <p>The combination of high‑quality embroidery on the wing, black aluminum D‑rings, and color‑matched weight stoppers creates a unified, minimalist appearance that highlights the technical character of the system.</p>
 
-<p>The Stainless Steel Triglide with Eye guides the loop bungee cleanly and precisely. The position remains constant, the bungee does not slip—repeatability instead of readjustment.</p>
+<p>The Stainless Steel Triglide with Eye guides the loop bungee cleanly and precisely. The position stays constant and the bungee does not slip. Repeatability instead of readjustment.</p>
 
 <p>The Bungee Hook secures the wing bungees. It keeps the bungee close to the body, avoids pressure points, and replaces makeshift solutions like bolt snaps with a durable, functional construction.</p>
 

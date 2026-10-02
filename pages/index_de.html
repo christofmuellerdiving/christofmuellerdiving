@@ -11,7 +11,7 @@
   />
   
   
-  <meta name="author" content="Christof Müller" /><meta name="description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Christof Müller unterrichtet beides im Freiwasser." />
+  <meta name="author" content="Christof Müller" /><meta name="description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Höchstens drei Teilnehmer, immer im Freiwasser, auf Deutsch oder Englisch." />
   <link rel="canonical" href="https://www.thinking-diver.com/pages/index_de.html" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="thinking-diver.com" />
   <meta property="og:title" content="Tauchkurse bei Heidelberg: Sidemount und GUE | Christof Müller" />
-  <meta property="og:description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Christof Müller unterrichtet beides im Freiwasser." />
+  <meta property="og:description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Höchstens drei Teilnehmer, immer im Freiwasser, auf Deutsch oder Englisch." />
   <meta property="og:url" content="https://www.thinking-diver.com/pages/index_de.html" />
   <meta property="og:image" content="https://www.thinking-diver.com/assets/img/og-default.jpg" />
   <meta property="og:locale" content="de_DE" />
@@ -34,18 +34,31 @@
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="/assets/css/all.min.css?v=1790922385" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/all.min.css?v=1790927043" rel="stylesheet" type="text/css" />
 
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1790922385" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1790927043" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1790922385" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1790927043" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
+  <!-- Strukturierte Daten: Person (Startseite) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christof Müller",
+    "url": "https://www.thinking-diver.com/pages/index_de.html",
+    "image": "https://www.thinking-diver.com/assets/img/about/christofabout.jpg",
+    "jobTitle": "Tauchlehrer (SDI/TDI Sidemount, GUE)",
+    "knowsLanguage": ["de", "en"],
+    "sameAs": ["https://www.instagram.com/christof.mueller"]
+  }
+  </script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="7ced9eb1-23a8-41cd-920f-2eaacd806452"></script>
 </head>
 
@@ -70,28 +83,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
           
-
           <li class="nav-item">
-
-            
-            <label for="languageSelector" hidden>Language</label>
-            <select class="nav-link nav-select " id="languageSelector" name="languageSelector"
-              onchange="location = `/pages/index_${this.options[this.selectedIndex].value}.html`;">
-
-                
-                <option value="en" 
-                >
-                  EN
-                </option>
-                
-                <option value="de" 
-                 selected="selected" >
-                  DE
-                </option>
-                
-
-            </select>
-
+            <a class="nav-link nav-lang" href="/pages/index_en.html" lang="en" hreflang="en" aria-label="English version" data-umami-event="nav-language">EN</a>
           </li>
           
           
@@ -121,7 +114,7 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1790922385"></script>
+  <script src="/assets/js/custom.js?v=1790927043"></script>
   <!-- End Navigation -->
 
 
@@ -135,7 +128,7 @@
     <div class="hero-copy">
       <p class="kicker">Christof Müller · SDI / TDI · GUE</p>
       <h1>Tauchkurse bei Heidelberg.</h1>
-      <p class="hero-lead">Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1. Christof Müller unterrichtet beides im Freiwasser.</p>
+      <p class="hero-lead">Sidemount-Kurse unter SDI/TDI, unterrichtet mit demselben Anspruch an Trim, Tarierung und Teamablauf wie meine GUE-Kurse vom Open Water Diver bis DPV 1. Höchstens drei Teilnehmer, immer im Freiwasser.</p>
       <div class="hero-actions">
         <a class="btn btn-primary btn-xl" data-umami-event="hero-sidemount" href="#courses">Sidemount-Kurse</a>
         <a class="btn btn-primary btn-xl" data-umami-event="hero-gue" href="#courses_gue">GUE-Kurse</a>
@@ -183,6 +176,53 @@
           <span class="nd-meta">Sa–So · 2 Tage<span class="nd-ask">Anfragen</span></span>
         </a>
       </li>
+      <li class="nd-item" data-end="2027-03-21">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+SDI+Sidemount++Diver%2C+20.%E2%80%9321.03.2027" data-umami-event="date-ask-band">
+          <span class="nd-date">20.–21.03.2027</span>
+          <span class="nd-title">SDI Sidemount  Diver</span>
+          <span class="nd-spots">3 Plätze frei</span>
+          <span class="nd-meta">Sa–So · 2 Tage<span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-04-18">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+TDI+Sidemount+Diver%2C+17.%E2%80%9318.04.2027" data-umami-event="date-ask-band">
+          <span class="nd-date">17.–18.04.2027</span>
+          <span class="nd-title">TDI Sidemount Diver</span>
+          <span class="nd-spots">3 Plätze frei</span>
+          <span class="nd-meta">Sa–So · 2 Tage<span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-05-23">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+GUE+Performance+Diver%2C+22.%E2%80%9323.05.2027" data-umami-event="date-ask-band">
+          <span class="nd-date">22.–23.05.2027</span>
+          <span class="nd-title">GUE Performance Diver</span>
+          
+          <span class="nd-meta">Sa–So · 2 Tage<span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-06-13">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+GUE+Basic+Fundamentals%2C+11.%E2%80%9313.06.2027" data-umami-event="date-ask-band">
+          <span class="nd-date">11.–13.06.2027</span>
+          <span class="nd-title">GUE Basic Fundamentals</span>
+          <span class="nd-spots">3 Plätze frei</span>
+          <span class="nd-meta">Fr–So · 3 Tage<span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
+      <li class="nd-item" data-end="2027-07-18">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr+den+Termin%3A+GUE+DPV+1%2C+16.%E2%80%9318.07.2027" data-umami-event="date-ask-band">
+          <span class="nd-date">16.–18.07.2027</span>
+          <span class="nd-title">GUE DPV 1</span>
+          <span class="nd-spots">3 Plätze frei</span>
+          <span class="nd-meta">Fr–So · 3 Tage<span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
+      <li class="nd-item nd-wish">
+        <a href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+h%C3%A4tte+gern+einen+Termin+f%C3%BCr+folgenden+Kurs%3A+" data-umami-event="date-wish-band">
+          <span class="nd-date">Wunschtermin</span>
+          <span class="nd-title">Passt keiner der Termine, schlag mir deinen vor.</span>
+          <span class="nd-meta"><span></span><span class="nd-ask">Anfragen</span></span>
+        </a>
+      </li>
     </ul>
     <a class="link-arrow nd-all" href="/pages/termine_de.html" data-umami-event="dates-all">Alle Termine</a>
   </div>
@@ -195,7 +235,7 @@
     var d = new Date();
     var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
     list.querySelectorAll('[data-end]').forEach(function (li) { if (li.getAttribute('data-end') < today) li.remove(); });
-    if (!list.children.length) document.getElementById('naechste-termine').remove();
+    if (!list.querySelectorAll('[data-end]').length) document.getElementById('naechste-termine').remove();
     // "Nächster Termin" auf den Kurskarten ausblenden, wenn er vorbei ist
     document.querySelectorAll('[data-next-end]').forEach(function (p) { if (p.getAttribute('data-next-end') < today) p.remove(); });
   })();
@@ -234,7 +274,7 @@
 
     
     <div class="section-intro">
-      <p>Christof unterrichtet die Sidemount-Kurse mit denselben Anforderungen an Trim, Tarierung und Teamablauf wie seine GUE-Kurse. Zertifiziert wird über SDI und TDI. Der Kurspfad zeigt die sinnvolle Reihenfolge vom Ausprobieren bis zur Tech-Konfiguration, DPV, Advanced Nitrox und Decompression Procedures kannst du ergänzend belegen.</p>
+      <p>Ich unterrichte die Sidemount-Kurse mit denselben Anforderungen an Trim, Tarierung und Teamablauf wie meine GUE-Kurse. Zertifiziert wird über SDI und TDI. Der Kurspfad zeigt die Reihenfolge vom Ausprobieren bis zur Tech-Konfiguration. DPV, Advanced Nitrox und Decompression Procedures kannst du ergänzend belegen.</p>
 
     </div>
     
@@ -258,7 +298,7 @@
   <div class="path-body">
     <div class="path-meta"><span>Ausprobieren</span></div>
     <h4>Try Dive Sidemount</h4>
-    <p>Sidemount testen, bevor du Ausrüstung kaufst. Die Konfiguration wird auf dich eingestellt, S-Drill an Land, danach eine ehrliche Einschätzung.</p>
+    <p>Sidemount testen, bevor du Ausrüstung kaufst. Ich stelle die Konfiguration auf dich ein, wir üben den S-Drill an Land, danach bekommst du eine ehrliche Einschätzung.</p>
     
     <div class="path-facts">
       <span>Halber Tag</span>
@@ -288,11 +328,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Einstieg</span></div>
     <h4>SDI Sidemount Diver</h4>
-    <p>Sidemount-Ausrüstung, Gewichtung, Gasmanagement mit zwei Flaschen und Problemlösung. Ohne Dekompression.</p>
+    <p>Für Sidemount im Freizeitbereich: Ausrüstung, Gewichtung, Gasmanagement mit zwei Flaschen und Problemlösung. Ohne Dekompression, bis 40 m.</p>
     
     <div class="path-facts">
       <span>2 Tage</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 505 €</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, ab 18 (15 mit Einverständnis der Eltern)</p>
@@ -319,11 +359,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Tech-Einstieg</span></div>
     <h4>TDI Intro to Tech</h4>
-    <p>Grundlagen des technischen Tauchens, bei Christof in Sidemount unterrichtet.</p>
+    <p>Grundlagen des technischen Tauchens ohne Dekompression, bei mir in Sidemount. Kombinierbar mit Advanced Nitrox.</p>
     
     <div class="path-facts">
       <span>3 Tage</span>
-      <span class="path-price">ab 675 €</span>
+      <span class="path-price">ab 740 €</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, 25 geloggte Tauchgänge, ab 18 (15 mit Einverständnis)</p>
@@ -349,14 +389,15 @@
   <div class="path-body">
     <div class="path-meta"><span>Tech-Sidemount</span></div>
     <h4>TDI Sidemount Diver</h4>
-    <p>Für technische Taucher: Flossenschläge, Problemlösung, Engstellen und optional das Mitführen zusätzlicher Flaschen.</p>
+    <p>Für Sidemount auch bei Dekompressionstauchgängen: Flossenschläge, Problemlösung, Engstellen und optional zusätzliche Flaschen.</p>
     
     <div class="path-facts">
       <span>2 Tage</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 505 €</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, ab 18</p>
+    <p class="path-next" data-next-end="2027-04-18">Nächster Termin: 17.–18.04.2027 · 3 Plätze frei</p>
     <span class="link-arrow">Details</span>
   </div>
 </a>
@@ -406,11 +447,11 @@
   <div class="path-body">
     <div class="path-meta"><span>Ergänzung</span></div>
     <h4>SDI DPV</h4>
-    <p>Scooter sicher führen, planen und im Team tauchen. Bei Christof auch in Sidemount.</p>
+    <p>Scooter sicher führen, planen und im Team tauchen. Bei mir auch in Sidemount.</p>
     
     <div class="path-facts">
       <span>2 Tage</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 505 €</span>
     </div>
     
     <p class="path-prereq">Open Water Diver, ab 18 (15 mit Einverständnis)</p>
@@ -440,7 +481,7 @@
     
     <div class="path-facts">
       <span>2 Tage</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 505 €</span>
     </div>
     
     <p class="path-prereq">Nitrox Diver, 25 geloggte Tauchgänge, ab 18 (15 mit Einverständnis)</p>
@@ -461,7 +502,7 @@
 <a class="path-step  path-extra" data-bs-toggle="modal" href="#tdideco7"
    data-umami-event="course-card" data-umami-event-course="tdideco">
   <div class="path-img">
-    <img src="/assets/img/courses/tdi-intro-full.jpg" alt="TDI Decompression Procedures" loading="lazy" />
+    <img src="/assets/img/about/christof-wide.jpg" alt="TDI Decompression Procedures" loading="lazy" />
   </div>
   <div class="path-body">
     <div class="path-meta"><span>Deko</span></div>
@@ -470,7 +511,7 @@
     
     <div class="path-facts">
       <span>3 Tage</span>
-      <span class="path-price">ab 675 €</span>
+      <span class="path-price">ab 740 €</span>
     </div>
     
     <p class="path-prereq">Advanced Diver, 25 geloggte Tauchgänge, ab 18</p>
@@ -528,9 +569,9 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/trydive-sidemount.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Try Dive Sidemount"
                 />
-                <p><p>Du interessierst dich für Sidemount oder ein Doppelgerät, bist aber unsicher, ob das etwas für dich ist? Beim Try Dive testest du die Ausrüstung, bevor du sie kaufst. Du lernst die Konfiguration genau kennen, sie wird korrekt auf dich eingestellt, und an Land übst du Sicherheitstechniken wie S-Drill und V-Drill. Nach dem Tauchgang besprecht ihr, wie es sich angefühlt hat, und du bekommst eine Einschätzung deiner Fähigkeiten.</p>
+                <p><p>Beim Try Dive testest du Sidemount oder ein Doppelgerät, bevor du Ausrüstung kaufst. Du lernst die Konfiguration genau kennen, ich stelle sie auf dich ein, und an Land üben wir Sicherheitstechniken wie S-Drill und V-Drill. Nach dem Tauchgang besprechen wir, wie es sich angefühlt hat, und du bekommst meine Einschätzung deiner Fähigkeiten.</p>
 
 <p>Dauer: mindestens ein halber Tag. Die Ausrüstung ist im Preis enthalten.</p>
 </p>
@@ -590,11 +631,13 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-sidemount-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="SDI Sidemount Diver"
                 />
-                <p><p>Der Einstieg ins Sidemount-Tauchen. Du lernst den sicheren Umgang mit der Sidemount-Ausrüstung, Gasmanagement mit zwei unabhängigen Flaschen, Gasteilen und den Sidemount-spezifischen S-Drill. Christof berät dich zur Ausrüstung und stellt sie auf dich ein.</p>
+                <p><p>Der Einstieg ins Sidemount-Tauchen im Freizeitbereich. Du lernst den sicheren Umgang mit der Sidemount-Ausrüstung, Gasmanagement mit zwei unabhängigen Flaschen, Gasteilen und den Sidemount-spezifischen S-Drill. Ich berate dich zur Ausrüstung und stelle sie auf dich ein.</p>
 
-<p><strong>Rahmen:</strong> mindestens 2 Freiwassertauchgänge, bei Christof über 2 Tage. Ohne Dekompression, maximal 40 m oder die Grenze deines Brevets.</p>
+<p><strong>Rahmen:</strong> mindestens 2 Freiwassertauchgänge, bei mir über 2 Tage. Ohne Dekompression, maximal 40 m oder die Grenze deines Brevets.</p>
+
+<p><strong>SDI oder TDI:</strong> Willst du Sidemount später auch bei Dekompressionstauchgängen nutzen, passt der TDI Sidemount Diver.</p>
 
 <p><strong>Voraussetzungen:</strong> SDI Open Water Scuba Diver oder gleichwertig, Mindestalter 18 Jahre (15 mit Einverständnis der Eltern).</p>
 
@@ -656,17 +699,17 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-intro-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="TDI Intro to Tech"
                 />
-                <p>
-<p>Der Kurs Intro to tech diving von TDI bietet den idealen Einstieg ins technische Tauchen für ausgebildete Taucher.
-Hier lernst du die grundlegenden Skills in Tauchplanung, Tarierung, Trim, Balance, Flossenschläge, Gas Planung und Notfallprozeduren.
-Dein Instructor hilft dir bei der optimalen Einstellung deines Equipments, sowohl in Backmount als auch Sidemount.
-Bei Christof dauert der Kurs 3 Tage. Der Standard verlangt mindestens 3 Tauchgänge, nicht tiefer als 23 m, und mindestens 6 Stunden Theorie und Briefings.</p>
+                <p><p>Intro to Tech ist der Einstieg ins technische Tauchen für ausgebildete Taucher, strikt ohne Dekompression. Du arbeitest an Tauchplanung, Tarierung, Trim und Balance, Flossenschlägen, Gasplanung und Notfallabläufen in technischer Konfiguration. Ich unterrichte den Kurs in Sidemount und stelle deine Ausrüstung mit dir ein.</p>
+
+<p><strong>Rahmen:</strong> bei mir 3 Tage. Der Standard verlangt mindestens 3 Tauchgänge, nicht tiefer als 23 m, und mindestens 6 Stunden Theorie und Briefings.</p>
+
+<p><strong>Kombination:</strong> Zusammen mit TDI Advanced Nitrox reichen nach Standard 4 Tauchgänge für beide Kurse. Danach geht es mit Decompression Procedures weiter.</p>
 
 <p><strong>Voraussetzungen:</strong> SDI Open Water Scuba Diver oder gleichwertig, 25 geloggte Freiwassertauchgänge, Mindestalter 18 Jahre (15 mit Einverständnis der Eltern).</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_03_Intro_to_Tech_Diver.pdf?lang=de" target="_blank">Weitere Infos</a></p>
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_03_Intro_to_Tech_Diver.pdf?lang=de" target="_blank">TDI-Standard Intro to Tech (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -724,11 +767,11 @@ Bei Christof dauert der Kurs 3 Tage. Der Standard verlangt mindestens 3 Tauchgä
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-sidemount-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="TDI Sidemount Diver"
                 />
-                <p><p>Der TDI-Kurs richtet sich an technische Taucher, die Sidemount in ihr Repertoire aufnehmen wollen. Gegenüber dem SDI-Kurs kommen weiterführende Skills und Drills dazu, etwa verschiedene Flossenschläge. Das Mitführen zusätzlicher Flaschen ist optional möglich. In der Theorie geht es unter anderem um Problemlösung und das Tauchen durch Engstellen.</p>
+                <p><p>Der TDI-Kurs richtet sich an Taucher, die Sidemount auch im technischen Tauchen nutzen wollen. Nach dem Kurs darfst du Sidemount mit Sicherheits- und Dekompressionsstopps tauchen, soweit dein übriges Brevet das abdeckt. Gegenüber dem SDI-Kurs kommen weiterführende Skills und Drills dazu, etwa verschiedene Flossenschläge. Das Mitführen zusätzlicher Flaschen ist optional möglich. In der Theorie geht es unter anderem um Problemlösung und das Tauchen durch Engstellen.</p>
 
-<p><strong>Rahmen:</strong> mindestens 2 Tage und 3 Freiwassertauchgänge mit insgesamt mindestens 90 Minuten Grundzeit. Empfohlen sind 4 Stunden Theorie und Briefings.</p>
+<p><strong>Rahmen:</strong> mindestens 2 Tage und 3 Freiwassertauchgänge mit insgesamt mindestens 90 Minuten Grundzeit. Empfohlen sind 4 Stunden Theorie und Briefings. Kombinierbar mit Advanced Nitrox (zusammen 4 Tauchgänge) und mit Decompression Procedures.</p>
 
 <p><strong>Voraussetzungen:</strong> SDI Open Water Scuba Diver oder gleichwertig, Mindestalter 18 Jahre.</p>
 
@@ -790,16 +833,15 @@ Bei Christof dauert der Kurs 3 Tage. Der Standard verlangt mindestens 3 Tauchgä
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-dpv-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="SDI DPV"
                 />
-                <p>
-<p>Dieser mindestens 2-tägige Kurs bildet Taucher in der Benutzung eines DPV (diver propulsion vehicle) aus und bringt ihnen die spezifischen Skills,
-die Tauchgangsplanung, sowie Prozeduren und Techniken bei.
-Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besprochen sowie deren Vermeidung.</p>
+                <p><p>Im SDI DPV lernst du, einen Scooter (DPV, Diver Propulsion Vehicle) sicher zu führen: Handling, Tauchgangsplanung, Abläufe und Techniken. Wir besprechen typische Probleme und Gefahren beim Tauchen mit DPV und wie du sie vermeidest. Ich unterrichte den Kurs auch in Sidemount.</p>
 
-<p><strong>Voraussetzungen:</strong> SDI Open Water Scuba Diver oder gleichwertig, Mindestalter 18 Jahre (15 mit Einverständnis der Eltern). Mindestens 2 Tauchgänge.</p>
+<p><strong>Rahmen:</strong> bei mir 2 Tage, mindestens 2 Tauchgänge.</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/SDI/part%203/pdf/individual/12_DPV_Diver.pdf?lang=de" target="_blank">Weitere Infos</a></p>
+<p><strong>Voraussetzungen:</strong> SDI Open Water Scuba Diver oder gleichwertig, Mindestalter 18 Jahre (15 mit Einverständnis der Eltern).</p>
+
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/SDI/part%203/pdf/individual/12_DPV_Diver.pdf?lang=de" target="_blank">SDI-Standard DPV Diver (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -857,18 +899,17 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tdi-adv-nitrox.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="TDI Advanced Nitrox"
                 />
-                <p>
-<p>Der Advanced Nitrox Kurs von TDI vermittelt dir alles, was du für den sicheren Einsatz von Sauerstoffgemischen bis 100% brauchst. Er richtet sich an Taucher, die ihre Grundzeiten und Dekompression mit Sauerstoffgemischen planen wollen. Es ist der erste Schritt in Richtung Dekompressionstauchen.</p>
+                <p><p>Im TDI Advanced Nitrox lernst du, Gemische von 21 bis 100 % Sauerstoff sicher einzusetzen. Der Kurs richtet sich an Taucher, die Grundzeit und Dekompression mit sauerstoffreichen Gemischen planen wollen, und ist der erste Schritt in Richtung Dekompressionstauchen.</p>
 
-<p>Was du lernst: Gasmanagement, Tauchgangsplanung, Ausrüstungskonfiguration und Skills, insbes. Aufstiege und Problemlösung unter Wahrung deiner Position im Team.</p>
+<p><strong>Was du lernst:</strong> Gasmanagement, Tauchgangsplanung, Ausrüstungskonfiguration und Skills, vor allem Aufstiege und Problemlösung, ohne deine Position im Team zu verlieren.</p>
 
-<p><strong>Rahmen:</strong> 4 Tauchgänge mit insgesamt mindestens 100 Minuten Grundzeit, mindestens 6 Stunden Theorie. Kombinierbar mit Intro to Tech oder TDI Sidemount.</p>
+<p><strong>Rahmen:</strong> 4 Tauchgänge mit insgesamt mindestens 100 Minuten Grundzeit, mindestens 6 Stunden Theorie. Kombiniert mit Intro to Tech oder TDI Sidemount reichen 4 Tauchgänge für beide Kurse.</p>
 
-<p><strong>Voraussetzungen:</strong> TDI Nitrox Diver oder gleichwertig, 25 geloggte Freiwassertauchgänge, Mindestalter 18 Jahre (15 mit Einverständnis der Eltern). Ein Intro to Tech ist empfohlen, aber nicht Pflicht.</p>
+<p><strong>Voraussetzungen:</strong> TDI Nitrox Diver oder gleichwertig, 25 geloggte Freiwassertauchgänge, Mindestalter 18 Jahre (15 mit Einverständnis der Eltern). Ich empfehle vorher Intro to Tech, Pflicht ist es nicht.</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_07_Advanced_Nitrox_Diver.pdf" target="_blank">Weitere Infos</a></p>
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_07_Advanced_Nitrox_Diver.pdf" target="_blank">TDI-Standard Advanced Nitrox (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -925,11 +966,10 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
                 </div>
                 <img
                   class="img-fluid d-block mx-auto"
-                  src="/assets/img/courses/tdi-intro-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  src="/assets/img/about/christof-wide.jpg" loading="lazy" decoding="async"
+                  alt="TDI Decompression Procedures"
                 />
-                <p>
-<p>Der Kurs behandelt Theorie, Planung und Ablauf geplanter Dekompressionstauchgänge mit Stufendekompression bis maximal 45 Meter. Dekomprimiert wird mit Nitrox oder Sauerstoff, soweit das Gemisch durch deine Ausbildung abgedeckt ist. Deshalb wird der Kurs oft mit Advanced Nitrox kombiniert.</p>
+                <p><p>Der Kurs behandelt Theorie, Planung und Ablauf geplanter Dekompressionstauchgänge mit Stufendekompression bis maximal 45 Meter. Dekomprimiert wird mit Nitrox oder Sauerstoff, soweit das Gemisch durch deine Ausbildung abgedeckt ist. Deshalb wird der Kurs oft mit Advanced Nitrox kombiniert.</p>
 
 <p><strong>Was du übst:</strong> Gasplanung nach eigenem und Teamverbrauch, ein exaktes Deko-Profil, die Stage-Flasche tragen, ablegen und wieder aufnehmen, Gaswechsel im Team, die Boje solo und im Team setzen, kontrollierte Aufstiege an Boje oder Leine, Ersatzmaske einsetzen und die Reaktion auf Gasverlust.</p>
 
@@ -937,7 +977,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
 
 <p><strong>Voraussetzungen:</strong> SDI Advanced Adventure Diver, Advanced Diver oder gleichwertig, 25 geloggte Freiwassertauchgänge, Mindestalter 18 Jahre.</p>
 
-<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_08_Decompression_Procedures_Diver.pdf" target="_blank">Weitere Infos</a></p>
+<p><a href="https://www.tdisdi.com/wp-content/uploads/files/sandp/currentYear/TDI/part%202/pdf/individual/TDI%20Diver%20Standards_08_Decompression_Procedures_Diver.pdf" target="_blank">TDI-Standard Decompression Procedures (PDF)</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -996,7 +1036,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
 
     
     <div class="section-intro">
-      <p>GUE bildet nach einheitlichen Standards für Ausrüstung, Verfahren und Teamarbeit aus, vom ersten Tauchgang bis ins technische Tauchen. Christof unterrichtet seit 2018 GUE-Kurse, vom Open Water Diver über Fundamentals und Primer bis DPV 1.</p>
+      <p>GUE bildet nach einheitlichen Standards für Ausrüstung, Verfahren und Teamarbeit aus, vom ersten Tauchgang bis ins technische Tauchen. Ich unterrichte seit 2018 GUE-Kurse, vom Open Water Diver über Fundamentals und Primer bis DPV 1.</p>
 
     </div>
     
@@ -1024,7 +1064,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
     
     <div class="path-facts">
       <span>5 Tage</span>
-      <span class="path-price">ab 1.125 €</span>
+      <span class="path-price">ab 1.175 €</span>
     </div>
     
     <p class="path-prereq">Keine Taucherfahrung nötig, ab 12 Jahren</p>
@@ -1054,7 +1094,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
     
     <div class="path-facts">
       <span>6 Tage</span>
-      <span class="path-price">ab 1.350 €</span>
+      <span class="path-price">ab 1.410 €</span>
     </div>
     
     <p class="path-prereq">GUE-Grundkurs, 15 Tauchgänge danach, ab 16, Erste Hilfe (BLS)</p>
@@ -1075,19 +1115,20 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
 <a class="path-step " data-bs-toggle="modal" href="#fundamentals3"
    data-umami-event="course-card" data-umami-event-course="fundamentals">
   <div class="path-img">
-    <img src="/assets/img/courses/fundies.jpg" alt="GUE Fundamentals Kurse" loading="lazy" />
+    <img src="/assets/img/courses/fundies.jpg" alt="GUE Fundamentals" loading="lazy" />
   </div>
   <div class="path-body">
     <div class="path-meta"><span>Grundlagen</span></div>
-    <h4>GUE Fundamentals Kurse</h4>
+    <h4>GUE Fundamentals</h4>
     <p>Performance Diver, Basic und Technical Fundamentals: Trim, Tarierung, Antriebstechniken und Teamablauf.</p>
     
     <div class="path-facts">
       <span>2 bis 4 Tage</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 470 €</span>
     </div>
     
     
+    <p class="path-next" data-next-end="2027-05-23">Nächster Termin: 22.–23.05.2027</p>
     <span class="link-arrow">Details</span>
   </div>
 </a>
@@ -1114,10 +1155,11 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
     
     <div class="path-facts">
       <span>3 Tage</span>
-      <span class="path-price">ab 675 €</span>
+      <span class="path-price">ab 705 €</span>
     </div>
     
     <p class="path-prereq">GUE-Grundkurs, 75 Tauchgänge, ab 16</p>
+    <p class="path-next" data-next-end="2027-07-18">Nächster Termin: 16.–18.07.2027 · 3 Plätze frei</p>
     <span class="link-arrow">Details</span>
   </div>
 </a>
@@ -1168,7 +1210,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
     
     <div class="path-facts">
       <span>2 Tage</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 470 €</span>
     </div>
     
     <p class="path-prereq">GUE-Grundkurs, 15 Tauchgänge danach</p>
@@ -1189,16 +1231,16 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
 <a class="path-step  path-extra" data-bs-toggle="modal" href="#morecourses6"
    data-umami-event="course-card" data-umami-event-course="morecourses">
   <div class="path-img">
-    <img src="/assets/img/courses/doubles.jpg" alt="GUE weitere Primer Kurse" loading="lazy" />
+    <img src="/assets/img/courses/doubles.jpg" alt="Weitere GUE-Primer" loading="lazy" />
   </div>
   <div class="path-body">
     <div class="path-meta"><span>Primer</span></div>
-    <h4>GUE weitere Primer Kurse</h4>
+    <h4>Weitere GUE-Primer</h4>
     <p>Doubles, Drysuit, Deep und Rescue Primer: Konfiguration und Skills für den nächsten Schritt.</p>
     
     <div class="path-facts">
       <span>je nach Primer</span>
-      <span class="path-price">ab 450 €</span>
+      <span class="path-price">ab 470 €</span>
     </div>
     
     
@@ -1262,11 +1304,11 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/perfomance.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Open Water Diver"
                 />
                 <p><p>Der GUE Open Water Diver ist der Einstieg für Nichttaucher. Von der ersten Stunde an lernst du, worauf alle GUE-Kurse aufbauen: stabile Tarierung, waagerechte Wasserlage, saubere Antriebstechniken und Tauchen im Team. Nitrox und Gasanalyse sind Teil des Kurses.</p>
 
-<p>Der Kurs dauert in der Regel fünf Tage. Er umfasst mindestens zehn Einheiten im flachen, ruhigen Wasser, sechs Freiwassertauchgänge und mindestens 40 Stunden Ausbildung aus Theorie, Übungen an Land und Training im Wasser. Jede Übung wird zuerst im flachen Wasser eingeführt. Dafür nutzt Christof den See statt eines Schwimmbads.</p>
+<p>Der Kurs dauert in der Regel fünf Tage. Er umfasst mindestens zehn Einheiten im flachen, ruhigen Wasser, sechs Freiwassertauchgänge und mindestens 40 Stunden Ausbildung aus Theorie, Übungen an Land und Training im Wasser. Jede Übung wird zuerst im flachen Wasser eingeführt. Dafür nutze ich den See statt eines Schwimmbads.</p>
 
 <p>Die maximale Tiefe im Kurs liegt bei 21 Metern, alle Tauchgänge bleiben ohne Dekompressionspflicht. Im Wasser kommen höchstens drei Teilnehmer auf einen Instruktor, der Kurs ist auch mit einer Person möglich.</p>
 
@@ -1330,7 +1372,7 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/tech-fundi-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Advanced Open Water Diver"
                 />
                 <p><p>Der GUE Advanced Open Water Diver bereitet auf tiefere Sporttauchgänge vor. Im Kurs geht es um Dekompressionstheorie und korrekte Aufstiege, Rettung an Land, an der Oberfläche und unter Wasser, Notfallmanagement und Navigation mit Kompass, Leine und natürlichen Merkmalen. Nitrox verlängert die Grundzeit, Triox senkt auf Wunsch Narkose und Gasdichte.</p>
 
@@ -1392,55 +1434,36 @@ Auch mögliche Probleme und Gefahren des Tauchens mit einem DPV werden besproche
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <div class="text-center">
-                  <h2>GUE Fundamentals Kurse</h2>
+                  <h2>GUE Fundamentals</h2>
                   <p class="item-intro text-muted"></p>
                 </div>
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/fundies.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Fundamentals"
                 />
-                <p><p>Der GUE Fundamentals erlaubt Tauchern jeden Niveaus ihre Skills zu verbessern und bereitet sie für ihr weiteres Taucherleben und ggf einen sicheren Einstieg ins technische Tauchen vor.
-Seit 2025 gibt es eine geänderte Kursstruktur, die den Fundi in 3 Kurse aufteilt.</p>
+                <p><p>Seit den Standards v10 ist der frühere Fundamentals in drei Kurse aufgeteilt: Performance Diver, Basic Fundamentals und Technical Fundamentals. Alle drei arbeiten an Tarierung, Trim, Balance, Antriebstechniken und Tauchen im Team, mit unterschiedlichem Ziel.</p>
 
-<p><br /></p>
+<p><img src="/assets/img/courses/perfomance.jpg" alt="GUE Performance Diver" class="img-fluid d-block mx-auto" /></p>
 
-<h3 id="performance-diver">Performance Diver</h3>
+<p><strong>Performance Diver:</strong> für Taucher mit einer ersten Ausbildung (OWD oder vergleichbar), die ihre Grundfertigkeiten festigen wollen, unabhängig davon, ob sie später technisch tauchen. Zwei Tage, vier Tauchgänge. Tauchen mit Nitrox gehört dazu.</p>
 
-<p><img src="/assets/img/courses/perfomance.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/performance-diver" target="_blank">GUE Performance Diver</a></p>
 
-<p>Du hast eine erste Tauchausbildung (OWD o.ä.) absolviert und möchtest deine Tauchfertigkeiten verfeinern und festigen. Dann ist der Performance Diver für dich gemacht. Er richtet sich an alle Taucher, unabhängig davon, ob sie den Weg ins technische Tauchen gehen möchten oder nicht.
-Dieser zweitägige Kurs (4 Tauchgänge) hilft dir dabei, deine Basic Skills zu verfeinern (Tarierung, Trim, Balance, Flossenschläge, Team).
-Auch das Tauchen mit Nitrox wirst du lernen.</p>
+<p><strong>Basic Fundamentals:</strong> der Einstieg ins weitere Tauchen mit GUE, zum Beispiel in die Primer. Du lernst Konfiguration und Arbeitsweise von GUE kennen und erarbeitest eine solide Basis an Skills. Der Kurs geht mit Mono- oder Doppelgerät, im Trockentauchanzug, wenn du darin Erfahrung hast.</p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Performance-Standards-v10.1.pdf" target="_blank">Mehr Infos</a></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/basic-fundamentals" target="_blank">GUE Basic Fundamentals</a></p>
 
-<p><br /></p>
+<p><img src="/assets/img/courses/tech-fundi-full.jpg" alt="GUE Technical Fundamentals" class="img-fluid d-block mx-auto" /></p>
 
-<h3 id="basic-fundamentals">Basic Fundamentals</h3>
+<p><strong>Technical Fundamentals:</strong> für erfahrene Taucher, die weiterführende Kurse im technischen Tauchen, auf dem Rebreather oder in der Höhle anstreben. Voraussetzungen sind unter anderem eine Zertifizierung auf 30 Meter, 75 Tauchgänge außerhalb von Kursen und 25 Tauchgänge mit Doppelgerät.</p>
 
-<p>Der GUE Basic Fundamentals Kurs ist dein Einstieg ins weitere Tauchen mit GUE (Primerkurse). Er erlaubt nicht-GUE
-Tauchern die Konfiguration und das Mindset von GUE kennenzulernen und eine solide Basis an Skills zu erarbeiten. Egal wo du stehst,
-der Fundmantals wird dir helfen ein besserer Taucher zu werden. Der Kurs kann sowohl in Mono- als auch Doppelgerät und wahlweise im
-Trockentauchanzug absolviert werden (Erfahrung vorausgesetzt).</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/BasicFund-Standards-v10.1.pdf" target="_blank">Mehr Infos</a></p>
-
-<p><br /></p>
-
-<h3 id="technical-fundamentals">Technical Fundamentals</h3>
-
-<p><img src="/assets/img/courses/tech-fundi-full.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
-
-<p>Der Technical Fundamentals richtet sich an erfahrene Taucher, die Interesse an weiterführenden Kursen im technischen, Rebreather oder Höhlentauchen haben. Voraussetzung sind u.a.
-eine Zertifizierung auf 30m, 75 nicht-Trainingtauchgänge und 25 Tauchgänge mit Doppelgerät.</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/TechFund-Standards-v10.1.pdf" target="_blank">Mehr Infos</a></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/technical/technical-fundamentals" target="_blank">GUE Technical Fundamentals</a></p>
 </p>
                 
                 <div class="modal-cta">
                   <a class="btn btn-primary btn-xl" data-umami-event="modal-enquiry" data-umami-event-course="fundamentals3"
-                     href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr%3A+GUE+Fundamentals+Kurse">Diesen Kurs anfragen</a>
+                     href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr%3A+GUE+Fundamentals">Diesen Kurs anfragen</a>
                   <a class="link-arrow" href="/pages/price_de.html">Preise</a>
                   <a href="#" class="modal-back" data-bs-dismiss="modal">Zurück</a>
                 </div>
@@ -1493,16 +1516,15 @@ eine Zertifizierung auf 30m, 75 nicht-Trainingtauchgänge und 25 Tauchgänge mit
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/dpv-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE DPV 1"
                 />
-                <p>
-<p>Jeder Taucher kennt wohl das Gefühl, gerne noch etwas weiter tauchen zu wollen. Ein DPV erlaubt es dir,
-andere Tauchplätze zu erreichen oder mehr Zeit an deinem Tauchziel, z.B. einem Wrack, zu verbringen.
-Im diesem 3-tägigen Kurs (mind. 5 Tauchgänge) erlernst du den sicheren Umgang mit einem DPV,
- die zugehörige Gasplanung und trainierst alle Skills und Notfallszenarien mit DPV.
-Voraussetzungen: GUE Open Water Diver, Performance Diver oder Fundamentals, danach mindestens 25 Tauchgänge außerhalb von Kursen, insgesamt mindestens 75 Tauchgänge, Mindestalter 16 Jahre.</p>
+                <p><p>Mit einem DPV erreichst du weiter entfernte Tauchplätze oder verbringst mehr Zeit am Ziel, zum Beispiel an einem Wrack. Im GUE DPV 1 lernst du den sicheren Umgang mit dem Scooter und die zugehörige Gasplanung und trainierst Skills und Notfallabläufe im Team.</p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/DPV1-Standards-v10.1.pdf" target="_blank">Weitere Infos</a></p>
+<p><strong>Rahmen:</strong> 3 Tage, mindestens 5 Tauchgänge.</p>
+
+<p><strong>Voraussetzungen:</strong> GUE Open Water Diver, Performance Diver oder Fundamentals, danach mindestens 25 Tauchgänge außerhalb von Kursen, insgesamt mindestens 75 Tauchgänge, Mindestalter 16 Jahre.</p>
+
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/foundational/dpv-1" target="_blank">GUE DPV 1</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -1560,16 +1582,15 @@ Voraussetzungen: GUE Open Water Diver, Performance Diver oder Fundamentals, dana
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/nav-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="GUE Navigation Primer"
                 />
-                <p><p>Autonome Taucher sollten sich unter Wasser zurechtfinden können.
-Im Kurs lernst du den Umgang mit natürlicher, Kompass- und Kartennavigation.
-Auch Leinenarbeit wird dir vermittelt und am Ende des Kurses wirst du selbstständig eine Karte erstellen.
-Der Kern des Kurses bei Christof Müller besteht darin, reproduzierbar einen Tauchgang zu planen und durchzuführen.
-Somit steht deinen Erkundungstouren unter Wasser nichts mehr im Weg. Der Navigation Primer ist ein zweitägiger Kurs mit mindestens 3 Tauchgängen,
-darunter ein Tauchgang bei reduziertem Umgebungslicht, zum Beispiel ein Nachttauchgang. Voraussetzungen: GUE Open Water Diver, Performance Diver oder Fundamentals und danach mindestens 15 Tauchgänge.</p>
+                <p><p>Autonome Taucher sollten sich unter Wasser zurechtfinden. Im Navigation Primer lernst du natürliche Navigation, Kompass- und Kartennavigation sowie Leinenarbeit, und am Ende erstellst du selbstständig eine Karte. Bei mir steht im Mittelpunkt, einen Tauchgang reproduzierbar zu planen und durchzuführen.</p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Navigation-Standards-v10.1.pdf" target="_blank">Weitere Infos</a></p>
+<p><strong>Rahmen:</strong> 2 Tage, mindestens 3 Tauchgänge, darunter einer bei reduziertem Umgebungslicht, zum Beispiel ein Nachttauchgang.</p>
+
+<p><strong>Voraussetzungen:</strong> GUE Open Water Diver, Performance Diver oder Fundamentals und danach mindestens 15 Tauchgänge.</p>
+
+<p><a href="https://www.gue.com/diver-training/standards-and-procedures" target="_blank">GUE-Standards</a></p>
 </p>
                 
                 <div class="modal-cta">
@@ -1621,49 +1642,34 @@ darunter ein Tauchgang bei reduziertem Umgebungslicht, zum Beispiel ein Nachttau
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <div class="text-center">
-                  <h2>GUE weitere Primer Kurse</h2>
+                  <h2>Weitere GUE-Primer</h2>
                   <p class="item-intro text-muted"></p>
                 </div>
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/doubles.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Weitere GUE-Primer"
                 />
-                <p>
-<h2 id="doubles-primer">Doubles Primer</h2>
+                <p><p><strong>Doubles Primer:</strong> Einführung in die GUE-Konfiguration mit Doppelgerät und die nötigen Skills und Drills.</p>
 
-<p>Einführung in die GUE Konfiguration vom Doppelgerät und die notwendigen Skills und Drills.</p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/doubles-primer" target="_blank">GUE Doubles Primer</a></p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Doubles-Standards-v10.1.pdf" target="_blank">Weitere Infos</a></p>
+<p><strong>Drysuit Primer:</strong> sicherer Umgang mit dem Trockentauchanzug. Der Kurs dauert in der Regel einen Tag.</p>
 
-<p><br /></p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/drysuit-primer" target="_blank">GUE Drysuit Primer</a></p>
 
-<h2 id="drysuit-primer">Drysuit Primer</h2>
+<p><strong>Deep Primer:</strong> Einführung in tiefere Tauchgänge mit Nitrox 32 oder Triox 30/30.</p>
 
-<p>Lerne den sicheren Umgang mit Trockentauchanzügen. Der Kurs dauert in der Regel einen Tag.</p>
+<p><a href="https://www.gue.com/diver-training/explore-gue-courses/recreational/deep-primer" target="_blank">GUE Deep Primer</a></p>
 
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Drysuit-Standards-v10.1.pdf" target="_blank">Weitere Infos</a></p>
+<p><strong>Rescue Primer:</strong> grundlegende Rettungsfähigkeiten und Notfallmanagement für Taucher.</p>
 
-<p><br /></p>
-
-<h2 id="deep-primer">Deep Primer</h2>
-
-<p>Der Deep Primer führt dich ein in tiefere Tauchgänge unter Nutzung von Nitrox 32 oder Triox 30/30.</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Deep-Standards-v10.1.pdf" target="_blank">Weitere Infos</a></p>
-
-<p><br /></p>
-
-<h2 id="rescue-primer">Rescue Primer</h2>
-
-<p>Der Rescue Primer vermittelt grundlegende Rettungsfähigkeiten und Notfallmanagement für Taucher.</p>
-
-<p><a href="https://www.gue.com/files/Standards_and_Procedures/standards10/Rescue-Standards-v10.1.pdf" target="_blank">Weitere Infos</a></p>
+<p><a href="https://www.gue.com/diver-training/standards-and-procedures" target="_blank">GUE-Standards</a></p>
 </p>
                 
                 <div class="modal-cta">
                   <a class="btn btn-primary btn-xl" data-umami-event="modal-enquiry" data-umami-event-course="morecourses6"
-                     href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr%3A+GUE+weitere+Primer+Kurse">Diesen Kurs anfragen</a>
+                     href="/pages/contact_de.html?message=Hallo+Christof%2C+ich+interessiere+mich+f%C3%BCr%3A+Weitere+GUE-Primer">Diesen Kurs anfragen</a>
                   <a class="link-arrow" href="/pages/price_de.html">Preise</a>
                   <a href="#" class="modal-back" data-bs-dismiss="modal">Zurück</a>
                 </div>
@@ -1753,7 +1759,7 @@ darunter ein Tauchgang bei reduziertem Umgebungslicht, zum Beispiel ein Nachttau
       <img
         class="mx-auto rounded-circle"
         src="/assets/img/about/christofabout.jpg" loading="lazy"
-        alt=""
+        alt="Mehr über Christof"
       />
     </a>
     <p class="text-muted">Tauchlehrer bei Deepstop Schwetzingen. Tausende Tauchgänge in Seen und Bergwerken, im Mittelmeer und in den Cenoten Mexikos. Ausgebildet bei GUE, TDI, ISE und PSAI bis Full Cave und Cave CCR.</p>
@@ -1780,7 +1786,7 @@ darunter ein Tauchgang bei reduziertem Umgebungslicht, zum Beispiel ein Nachttau
 
 
     <div class="fact-row">
-      <div><strong>SDI / TDI</strong><span>Sidemount-Instruktor</span></div><div><strong>GUE</strong><span>Instruktor seit 2018</span></div><div><strong>Deepstop</strong><span>seit 2017</span></div>
+      <div><strong>DE · EN</strong><span>Unterrichtssprachen</span></div><div><strong>Seit 2017</strong><span>Instruktor bei Deepstop</span></div><div><strong>Full Cave · CCR</strong><span>Eigene Ausbildung</span></div>
     </div>
 
   </div>
@@ -1824,31 +1830,26 @@ darunter ein Tauchgang bei reduziertem Umgebungslicht, zum Beispiel ein Nachttau
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/about/christofabout-full.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Christof Müller"
                 />
-                <p><p>Christof ist ein erfahrener Trainer. Hauptberuflich ist er seit über 25 Jahren als IT Consultant und Trainer tätig und seit vielen Jahren auch als Tauchlehrer. Hier bereitet er seine Schüler insbesondere auf die Herausforderungen des technischen Tauchens vor und begleitet sie dabei sowohl auf dem <strong>GUE</strong> Weg als auch im <strong>Sidemount Tauchen unter SDI / TDI</strong>. Er bildet sowohl Einsteiger als auch erfahrene technische Taucher aus.
-<br />
-<br />
-Er selbst hat <strong>viele Tausend Tauchgänge sowohl im Kaltwasser</strong> hier in Deutschland (Seen &amp; Bergwerke), <strong>als auch in wärmeren Gewässern</strong> (Malta, Gozo, Kroatien) und insbesondere in den Cenoten Mexikos, wo er seine Ausbildung im <strong>Höhlentauchen bis hin zum CCR full cave</strong> durchlaufen hat. Die vollständige Liste der Zertifizierungen als Taucher findet ihr weiter unten. Auf dem Kiss Sidewinder hat er seit 2021 über 200 Tauchstunden und taucht auch privat sowohl Sidemount (OC) als auch D12 Backmount. Seine eigene technische Ausbildung hat er bei GUE, TDI, ISE und PSAI absolviert.</p>
+                <p><p>Christof arbeitet seit über 25 Jahren als IT-Trainer und Berater und unterrichtet seit vielen Jahren auch als Tauchlehrer. Unter Wasser bereitet er Taucher auf die Anforderungen des technischen Tauchens vor, auf dem <strong>GUE</strong>-Weg und im <strong>Sidemount unter SDI/TDI</strong>, vom Einsteiger bis zum erfahrenen technischen Taucher.</p>
 
-<p><img src="/assets/img/about/sidewinder-mexico.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p>Er hat viele Tausend Tauchgänge im Kaltwasser in Deutschland (Seen und Bergwerke), in wärmeren Gewässern (Malta, Gozo, Kroatien) und vor allem in den Cenoten Mexikos, wo er seine Höhlenausbildung bis Full Cave und Cave CCR gemacht hat. Auf dem KISS Sidewinder hat er seit 2021 über 200 Tauchstunden, privat taucht er Sidemount (OC) und D12 im Backmount. Seine eigene technische Ausbildung hat er bei GUE, TDI, ISE und PSAI gemacht. Diese Erfahrung fließt in den Unterricht ein; Höhlenkurse unterrichtet er nicht.</p>
 
-<p><br />
-Als Tauchlehrer begleitet er euch u.a. durch den Fundamentals, DPV1 oder Navigation Primer von GUE, und durch Sidemount Kurse bei SDI und TDI, sowie den Intro to Tech. Unter “Kurse” findet ihr die vollständige Liste und weiterführende Informationen.
-<br />
-<br />
-An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzingen</strong> an. Er berät  euch gerne im Shop und ist hier insbesondere euer <strong>Ansprechpartner für Sidemount Systeme</strong> und stellt euch diese auch gerne professionell ein. Außerdem dient ihm Deepstop als Basis für alle Kurse. Die Nähe zu diversen Seen vereinfacht weiterhin die Organisation und sorgt für einen reibungslosen Ablauf.</p>
+<p><img src="/assets/img/about/sidewinder-mexico.jpg" alt="Christof mit dem KISS Sidewinder in einer Cenote in Mexiko" class="img-fluid d-block mx-auto" /></p>
 
-<p><img src="/assets/img/about/deepstop.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p>Als Instruktor begleitet er dich durch GUE-Kurse vom Open Water Diver über Fundamentals und Primer bis DPV 1 und durch die Sidemount-Kurse unter SDI und TDI bis Intro to Tech und Decompression Procedures. Alle Kurse stehen auf der Startseite unter Sidemount und GUE.</p>
 
-<p>Christof liebt und lebt das technische Tauchen und kann euch viele wertvolle Tips und Tricks zeigen. Privat taucht er bis Full Cave und auf dem Rebreather. Diese Erfahrung fließt in den Unterricht ein.</p>
+<p>An mehreren Tagen im Monat ist Christof bei <strong>Deepstop in Schwetzingen</strong>. Dort berät er im Shop, ist Ansprechpartner für Sidemount-Systeme und stellt sie ein. Deepstop ist auch die Basis seiner Kurse: Theorie im Schulungsraum, die Seen der Umgebung sind schnell erreichbar.</p>
 
-<h6 id="zertifizierungen-als-taucher-technisches-tauchen">Zertifizierungen als Taucher (technisches Tauchen)</h6>
+<p><img src="/assets/img/about/deepstop.jpg" alt="Deepstop Schwetzingen" class="img-fluid d-block mx-auto" /></p>
 
-<p><img src="/assets/img/about/pic4.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<h6 id="eigene-ausbildung-technisches-tauchen">Eigene Ausbildung (technisches Tauchen)</h6>
+
+<p><img src="/assets/img/about/pic4.jpg" alt="Christof unter Wasser im Trockentauchanzug" class="img-fluid d-block mx-auto" /></p>
 
 <ul>
-  <li>GUE Gasblender</li>
+  <li>GUE Gas Blender</li>
   <li>GUE Tec 1</li>
   <li>ISE Exploration Diver 1 Sidemount</li>
   <li>PSAI Full Cave</li>
@@ -1859,27 +1860,14 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
   <li>PSAI Cave CCR</li>
 </ul>
 
-<h6 id="zertifizierungen-als-instructor">Zertifizierungen als Instructor</h6>
+<h6 id="instruktor-ratings">Instruktor-Ratings</h6>
 
-<p><img src="/assets/img/about/pic5.jpg" alt="image info" class="img-fluid d-block mx-auto" /></p>
+<p><img src="/assets/img/about/pic5.jpg" alt="Christof im Unterricht" class="img-fluid d-block mx-auto" /></p>
 
 <ul>
-  <li>GUE:
-    <ul>
-      <li>Advanced Open Water Diver Instructor</li>
-      <li>GUE Fundamentals Instructor</li>
-      <li>GUE DPV1 Instructor</li>
-    </ul>
-  </li>
-  <li>TDI:
-    <ul>
-      <li>Intro to Tech Instructor</li>
-      <li>Sidemount Instructor</li>
-      <li>DPV Instructor</li>
-      <li>Advanced Nitrox Instructor</li>
-    </ul>
-  </li>
-  <li>SDI Open Water Instructor</li>
+  <li>GUE: Open Water Diver, Advanced Open Water Diver, Fundamentals, DPV 1</li>
+  <li>TDI: Intro to Tech, Sidemount, Advanced Nitrox, Decompression Procedures</li>
+  <li>SDI: Open Water Scuba Diver, Sidemount, DPV</li>
 </ul>
 </p>
                 
@@ -1922,7 +1910,7 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
       
       <div class="teaching-item">
         <h4>Ausrüstung wird eingestellt</h4>
-        <p>Vor dem ersten Tauchgang wird deine Ausrüstung geprüft und auf dich eingestellt. Fehlende Teile kannst du leihen.</p>
+        <p>Vor dem ersten Tauchgang prüfe ich deine Ausrüstung und stelle sie auf dich ein. Fehlende Teile kannst du leihen.</p>
         
       </div>
       
@@ -1934,7 +1922,7 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
       
       <div class="teaching-item">
         <h4>Personal Training</h4>
-        <p>Kein neuer Kurs nötig: Auf Basis einer Videoanalyse arbeitet Christof mit dir gezielt an einzelnen Skills.</p>
+        <p>Kein neuer Kurs nötig: Auf Basis einer Videoanalyse arbeite ich mit dir gezielt an einzelnen Skills.</p>
         <a class="link-arrow" data-bs-toggle="modal" href="#personaltraining">Mehr zum Personal Training</a>
       </div>
       
@@ -1976,9 +1964,11 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
                 <img
                   class="img-fluid d-block mx-auto"
                   src="/assets/img/courses/privelesson.jpg" loading="lazy" decoding="async"
-                  alt=""
+                  alt="Personal Training"
                 />
-                <p><p>Es muss nicht immer ein neuer Kurs sein. Manchmal ist es einfach hilfreich, an bestimmten Skills mit einem erfahrenen Trainer zu arbeiten. Auf Basis einer Videoanalyse deiner spezifischen Probleme und Defizite hilft dir Christof deine Tauchfertigkeiten zu verbessern und deine persönlichen Ziele zu erreichen.</p>
+                <p><p>Nicht jedes Ziel braucht einen neuen Kurs. Im Personal Training arbeiten wir gezielt an einzelnen Skills. Grundlage ist eine Videoanalyse deiner Tauchgänge: Wir sehen uns an, wo es hakt, und ich zeige dir, wie du es abstellst. Die Inhalte stimmen wir vorher ab.</p>
+
+<p><strong>Preis:</strong> halber Tag 100 €, ganzer Tag 225 €, zuzüglich Gas und Seeeintritt.</p>
 </p>
                 
                 <div class="modal-cta">
@@ -2106,24 +2096,24 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
     <div class="post-grid">
       
       <a class="post-card is-featured" href="/2026/06/03/Backmount-oder-Sidemount-die-falsche-Frage.html">
-        <div class="post-img"><img src="/assets/img/blog/f8509596-1425-4609-a389-666790551c6d.jpeg" alt="" loading="lazy" /></div>
+        <div class="post-img"><img src="/assets/img/blog/thumb/f8509596-1425-4609-a389-666790551c6d.jpg" alt="" loading="lazy" /></div>
         <p class="post-date">Grundlagen · 03.06.2026</p>
-        <h4>Backmount oder Sidemount – die falsche Frage</h4>
+        <h4>Backmount oder Sidemount: die falsche Frage</h4>
         <p>“Jedes System ist ein Werkzeug. Wer das vergisst, kauft den falschen Hammer.”</p>
       </a>
       
       <a class="post-card" href="/2026/08/18/Die-Kunst,-langsamer-zu-werden.html">
-        <div class="post-img"><img src="/assets/img/blog/slowissmooth.jpg" alt="" loading="lazy" /></div>
+        <div class="post-img"><img src="/assets/img/blog/thumb/slowissmooth.jpg" alt="" loading="lazy" /></div>
         <p class="post-date">18.08.2026</p>
         <h4>Die Kunst, langsamer zu werden</h4>
         <p>Slow is smooth, smooth is fast. Warum Zügigkeit aus Bewusstsein kommt, nicht aus Hektik</p>
       </a>
       
       <a class="post-card" href="/2026/07/27/silent-rituals-of-divers.html">
-        <div class="post-img"><img src="/assets/img/blog/silent-rituals-of-divers.jpg" alt="" class="is-contain" loading="lazy" /></div>
+        <div class="post-img"><img src="/assets/img/blog/thumb/silent-rituals-of-divers.jpg" alt="" class="is-contain" loading="lazy" /></div>
         <p class="post-date">27.07.2026</p>
         <h4>Silent Rituals of Divers</h4>
-        <p>Warum das stille Ritual der Krieger direkt ins Höhlen- und technische Tauchen gehört – und was es mit deinem Pre-Dive-Check zu tun...</p>
+        <p>Warum das stille Ritual der Krieger direkt ins Höhlen- und technische Tauchen gehört, und was es mit deinem Pre-Dive-Check zu tun hat....</p>
       </a>
       
     </div>
@@ -2144,7 +2134,7 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
       <div class="col-lg-5 mb-4 mb-lg-0 text-center">
         <a data-bs-toggle="modal" href="#xdeepModal" style="cursor:pointer;">
           <img
-            src="/assets/img/x-deep-christof-muller-sidemount-set.png" loading="lazy"
+            src="/assets/img/x-deep-christof-muller-sidemount-set.jpg" loading="lazy"
             alt="XDEEP Stealth Tec Christof Müller Set"
             class="img-fluid rounded shadow-sm"
           />
@@ -2186,12 +2176,12 @@ An mehreren Tagen im Monat trifft man Christof bei <strong>Deepstop in Schwetzin
               <div class="text-center">
                 <h2 class="text-uppercase">XDEEP Stealth Tec Christof Müller Set</h2>
               </div>
-              <img class="img-fluid d-block mx-auto" loading="lazy" src="/assets/img/x-deep-christof-muller-sidemount-set.png" alt="XDEEP Stealth Tec Christof Müller Set" />
+              <img class="img-fluid d-block mx-auto" loading="lazy" src="/assets/img/x-deep-christof-muller-sidemount-set.jpg" alt="XDEEP Stealth Tec Christof Müller Set" />
               <div class="mt-4"><p>Dieses Upgrade-Set für das XDEEP Stealth wurde entwickelt, um das bestehende Konzept nicht zu verändern, sondern gezielt zu optimieren.</p>
 
 <p>Die Kombination aus hochwertiger Stickerei auf der Rückenblase, schwarzen Aluminium‑D‑Ringen und farblich abgestimmten Bleistoppern sorgt für ein einheitliches, reduziertes Erscheinungsbild und unterstreicht den technischen Anspruch des Systems.</p>
 
-<p>Der Stainless Steel Triglide with Eye führt das Loop‑Bungee sauber und definiert. Die Position bleibt konstant, das Bungee verrutscht nicht – Wiederholbarkeit statt Nachjustieren.</p>
+<p>Der Stainless Steel Triglide with Eye führt das Loop‑Bungee sauber und definiert. Die Position bleibt konstant, das Bungee verrutscht nicht. Wiederholbarkeit statt Nachjustieren.</p>
 
 <p>Der Bungee Hook übernimmt die Fixierung der Wing‑Bungees. Er hält das Bungee körpernah, vermeidet Druckpunkte und ersetzt provisorische Lösungen wie Bolt Snaps durch eine dauerhafte, funktionale Konstruktion.</p>
 

@@ -11,7 +11,7 @@
   />
   
   
-  <meta name="author" content="Christof Müller" /><meta name="description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Christof Müller unterrichtet beides im Freiwasser." />
+  <meta name="author" content="Christof Müller" /><meta name="description" content="Kursanfrage für Sidemount- und GUE-Kurse bei Heidelberg: Schreib, welchen Kurs du im Blick hast. Die Antwort kommt persönlich von Christof Müller." />
   <link rel="canonical" href="https://www.thinking-diver.com/pages/contact_de.html" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
@@ -21,28 +21,28 @@
   <!-- Vorschau beim Teilen (Facebook, WhatsApp, LinkedIn) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="thinking-diver.com" />
-  <meta property="og:title" content="Christof Müller" />
-  <meta property="og:description" content="Sidemount-Kurse unter SDI/TDI und GUE-Kurse vom Open Water Diver bis DPV 1 bei Heidelberg. Christof Müller unterrichtet beides im Freiwasser." />
+  <meta property="og:title" content="Kontakt und Kursanfrage | Christof Müller" />
+  <meta property="og:description" content="Kursanfrage für Sidemount- und GUE-Kurse bei Heidelberg: Schreib, welchen Kurs du im Blick hast. Die Antwort kommt persönlich von Christof Müller." />
   <meta property="og:url" content="https://www.thinking-diver.com/pages/contact_de.html" />
   <meta property="og:image" content="https://www.thinking-diver.com/assets/img/og-default.jpg" />
   <meta property="og:locale" content="de_DE" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Christof Müller</title>
+  <title>Kontakt und Kursanfrage | Christof Müller</title>
 
   <!-- Bootstrap core CSS -->
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="/assets/css/all.min.css?v=1790922385" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/all.min.css?v=1790927043" rel="stylesheet" type="text/css" />
 
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1790922385" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1790927043" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1790922385" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1790927043" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
@@ -70,28 +70,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
           
-
           <li class="nav-item">
-
-            
-            <label for="languageSelector" hidden>Language</label>
-            <select class="nav-link nav-select " id="languageSelector" name="languageSelector"
-              onchange="location = `/pages/index_${this.options[this.selectedIndex].value}.html`;">
-
-                
-                <option value="en" 
-                >
-                  EN
-                </option>
-                
-                <option value="de" 
-                 selected="selected" >
-                  DE
-                </option>
-                
-
-            </select>
-
+            <a class="nav-link nav-lang" href="/pages/contact_en.html" lang="en" hreflang="en" aria-label="English version" data-umami-event="nav-language">EN</a>
           </li>
           
           
@@ -121,56 +101,52 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1790922385"></script>
+  <script src="/assets/js/custom.js?v=1790927043"></script>
   <!-- End Navigation -->
 
 <div class="container" id="pagecontainer">
 
     <!-- Contact -->
 
+
 <div style="height: 80px;">
-  
+
 </div>
 <section class="page-section" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">
-          <p>Kontakt</p>
-</h2>
-        <h3 class="section-subheading text-muted"></h3>
+        <h1 class="section-heading text-uppercase">Kontakt</h1>
+        <p class="contact-lead">Schreib mir, welchen Kurs du im Blick hast und wie viele Tauchgänge du mitbringst. Die Antwort kommt persönlich von mir.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12">
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <div class="col-lg-12"><form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="8fe175bd-61ce-46ac-9557-c06e6b56bb64">
+            <input type="hidden" name="from_name" value="thinking-diver.com">
             <input type="hidden" name="redirect" id="redirectURL">
             <script>
             document.getElementById('redirectURL').value = window.location.protocol + '//' + window.location.host + '/pages/thankyou_de.html';
             </script>
-          <!--name="sentMessage"-->
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input name="name" class="form-control" id="name" type="text"
+                <input name="name" class="form-control" id="name" type="text" autocomplete="name"
                   placeholder="Name*"
                   required="required" data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input name="_replyto" class="form-control" id="email" type="email"
-                  placeholder="Email*"
+                <input name="email" class="form-control" id="email" type="email" autocomplete="email"
+                  placeholder="E-Mail*"
                   required="required" data-validation-required-message="Please enter your email address.">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input name="phone" class="form-control" id="phone" type="tel"
-                  placeholder="Telefonnummer"
-                   data-validation-required-message="Please enter your phone number.">
+                <input name="phone" class="form-control" id="phone" type="tel" autocomplete="tel"
+                  placeholder="Telefonnummer">
                 <p class="help-block text-danger"></p>
               </div>
-              
               <div class="form-group">
                 <label class="form-label-mono" for="kurs">Welcher Kurs?</label>
                 <select name="kurs" id="kurs" class="form-control form-select-light">
@@ -204,8 +180,8 @@
                 <p class="help-block text-danger"></p>
               </div>
             </div>
-            <input type="hidden" name="_subject" id="email-subject"
-              value="Contact Form Submission">
+            <input type="hidden" name="subject" id="email-subject" value="Kursanfrage über thinking-diver.com" data-base="Kursanfrage über thinking-diver.com">
+            <input type="checkbox" name="botcheck" class="d-none" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="clearfix"></div>
             <div class="col-lg-12 text-center">
               <div id="success"></div>
@@ -213,30 +189,54 @@
                 type="submit" data-umami-event="contact-submit">Nachricht senden</button>
               <p class="form-privacy">Deine Angaben werden nur zur Bearbeitung der Anfrage verwendet. Details in der <a href="/pages/legal_de.html">Datenschutzerklärung</a>.</p>
             </div>
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="hidden" name="_next" value="#" />
           </div>
         </form>
       </div>
     </div>
+    
+    <div class="contact-after">
+      <p class="kicker kicker-center contact-after-kicker">So geht es weiter</p>
+      <ol class="contact-steps">
+        <li><span class="contact-step-no">1</span><span>Du schickst mir deine Anfrage, am besten mit Kurs und Anzahl deiner Tauchgänge.</span></li><li><span class="contact-step-no">2</span><span>Ich melde mich, und wir klären in einem kurzen Telefonat Kurs, Termin und Ausrüstung.</span></li><li><span class="contact-step-no">3</span><span>Steht der Termin, bekommst du vorab die Liste mit allem, was du für den Kurs brauchst.</span></li>
+      </ol>
+      
+      <p class="contact-direct">Lieber direkt:
+        <a href="tel:+491733626887" data-umami-event="contact-phone">0173 3626887</a>
+        <span aria-hidden="true">·</span>
+        <a href="mailto:mueller@cm-training.de" data-umami-event="contact-mail">mueller@cm-training.de</a>
+      </p>
+      
+    </div>
+    
   </div>
 </section>
 
 
 <script>
-// Pre-fill message from URL parameter (e.g., from course inquiry button)
+// Nachricht aus dem Link vorbelegen (z. B. "Diesen Kurs anfragen") und Betreff mit Kurs und Name ergänzen
 (function() {
   var urlParams = new URLSearchParams(window.location.search);
   var messageParam = urlParams.get('message');
   var messageField = document.getElementById('message');
-  
   if (messageField && messageParam) {
     messageField.value = messageParam; // URLSearchParams dekodiert bereits
   }
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function () {
+    var subject = document.getElementById('email-subject');
+    var kurs = document.getElementById('kurs');
+    var name = document.getElementById('name');
+    var text = subject.getAttribute('data-base');
+    if (kurs && kurs.value) text += ': ' + kurs.value;
+    if (name && name.value) text += ' (' + name.value + ')';
+    subject.value = text;
+  });
 })();
 </script>
 
 <!-- End Contact -->
+
 
 </div>
 
