@@ -2382,6 +2382,101 @@ section#contact h1.section-heading {
     min-height: 0;
   }
 }
+.team-member .about-story {
+  margin: 18px 0 0;
+}
+
+.xdeep-feature {
+  background: #0d3451;
+  color: #f4f1eb;
+}
+.xdeep-feature .kicker {
+  color: #37b4aa;
+}
+.xdeep-feature .kicker::before {
+  background: #37b4aa;
+}
+.xdeep-feature .xdeep-title {
+  color: #f4f1eb;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 20px;
+}
+.xdeep-feature .xdeep-body p {
+  color: rgba(244, 241, 235, 0.86);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.xdeep-feature .xdeep-set-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8ca9b8;
+  margin: 24px 0 12px;
+}
+.xdeep-feature .xdeep-set {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+}
+.xdeep-feature .xdeep-set li {
+  position: relative;
+  padding-left: 22px;
+  color: #f4f1eb;
+  line-height: 1.45;
+}
+.xdeep-feature .xdeep-set li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 12px;
+  height: 2px;
+  background: #37b4aa;
+}
+.xdeep-feature .xdeep-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+}
+.xdeep-feature .xdeep-actions .link-arrow {
+  color: #37b4aa;
+}
+.xdeep-feature .xdeep-logo {
+  display: inline-block;
+  margin-top: 28px;
+}
+.xdeep-feature .xdeep-logo img {
+  max-height: 48px;
+  width: auto;
+}
+.xdeep-feature .xdeep-img {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+}
+.xdeep-feature .xdeep-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+.xdeep-feature .xdeep-img:hover img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 575px) {
+  .xdeep-feature .xdeep-set {
+    grid-template-columns: 1fr;
+  }
+}
 .price-page {
   padding-top: 40px;
 }
