@@ -1816,18 +1816,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   max-width: 560px;
   margin: 0 auto 32px;
 }
-.cta-band .cta-links {
-  margin-top: 28px;
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-}
-.cta-band .cta-links a {
-  color: #8ca9b8;
-}
-.cta-band .cta-links a:hover {
-  color: #37b4aa;
-}
 
 .cta-band .kicker {
   color: #37b4aa;
@@ -2110,6 +2098,15 @@ section[id], .page-section {
   gap: 12px;
 }
 
+@media (max-width: 575px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .sticky-cta {
   display: none;
 }
@@ -2524,6 +2521,21 @@ section#contact h1.section-heading {
   grid-column: 1/-1;
 }
 
+@media (min-width: 768px) {
+  .quote-grid > .quote-card:first-child:nth-last-child(odd) {
+    padding: 40px 28px 32px;
+  }
+  .quote-grid > .quote-card:first-child:nth-last-child(odd) blockquote, .quote-grid > .quote-card:first-child:nth-last-child(odd) figcaption {
+    width: 100%;
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quote-grid > .quote-card:first-child:nth-last-child(odd) blockquote p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+}
 .price-page {
   padding-top: 40px;
 }
