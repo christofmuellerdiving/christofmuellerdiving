@@ -3530,4 +3530,31 @@ section#contact h1.section-heading {
   color: #1b7069;
 }
 
+.course-focus {
+  border-left: 4px solid #37b4aa;
+  padding: 2px 0 2px 22px;
+  margin: 0 0 36px;
+}
+.course-focus .kicker {
+  margin-bottom: 10px;
+}
+
+.course-content p.course-focus-text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #0d3451;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .course-content p.course-focus-text {
+    font-size: 1.15rem;
+  }
+}
+.course-content .course-focus p.kicker {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #1b7069;
+}
+
 /*# sourceMappingURL=agency.css.map */
