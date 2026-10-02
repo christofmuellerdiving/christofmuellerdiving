@@ -2448,14 +2448,6 @@ section#contact h1.section-heading {
 .xdeep-feature .xdeep-actions .link-arrow {
   color: #37b4aa;
 }
-.xdeep-feature .xdeep-logo {
-  display: inline-block;
-  margin-top: 28px;
-}
-.xdeep-feature .xdeep-logo img {
-  max-height: 48px;
-  width: auto;
-}
 .xdeep-feature .xdeep-img {
   display: block;
   border-radius: 4px;
@@ -2475,6 +2467,42 @@ section#contact h1.section-heading {
 @media (max-width: 575px) {
   .xdeep-feature .xdeep-set {
     grid-template-columns: 1fr;
+  }
+}
+.xdeep-feature .xdeep-coop {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.xdeep-feature .xdeep-coop a {
+  display: inline-block;
+  line-height: 0;
+}
+.xdeep-feature .xdeep-coop img {
+  height: 88px;
+  width: auto;
+  transition: transform 0.25s ease;
+}
+.xdeep-feature .xdeep-coop a:hover img {
+  transform: scale(1.04);
+}
+.xdeep-feature .xdeep-coop-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8ca9b8;
+}
+.xdeep-feature .xdeep-exclusive {
+  margin: 20px 0 0;
+  font-size: 0.95rem;
+  color: rgba(244, 241, 235, 0.8);
+}
+
+@media (max-width: 575px) {
+  .xdeep-feature .xdeep-coop img {
+    height: 68px;
   }
 }
 .price-page {
