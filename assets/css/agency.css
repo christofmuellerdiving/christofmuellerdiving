@@ -1152,6 +1152,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #1b7069;
 }
 
+.dates-list-box {
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 24px 28px;
+  background: #fff;
+  border: 1px solid #d6d0c4;
+  border-left: 4px solid #37b4aa;
+}
+.dates-list-box .kicker {
+  margin-bottom: 10px;
+}
+.dates-list-box p {
+  color: #1e2530;
+  margin-bottom: 16px;
+}
+
 .blog-post-page #mainNav {
   background-color: #0d3451;
   opacity: 1;
@@ -2565,6 +2581,123 @@ section#contact h1.section-heading {
     line-height: 1.6;
   }
 }
+.start-here {
+  background: #fff;
+}
+
+.start-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .start-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 575px) {
+  .start-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.start-item {
+  background: #f4f1eb;
+  border: 1px solid #d6d0c4;
+  border-top: 3px solid #37b4aa;
+  padding: 24px 22px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.start-item p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #1e2530;
+  margin: 0 0 18px;
+  flex: 1;
+}
+
+.start-item h3.start-title,
+.fit h3.fit-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0d3451;
+  margin: 0 0 10px;
+}
+
+.start-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .fit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.fit-col {
+  background: #fff;
+  border: 1px solid #d6d0c4;
+  padding: 28px 28px 20px;
+}
+.fit-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+.fit-col li {
+  position: relative;
+  padding: 12px 0 12px 30px;
+  border-top: 1px solid #d6d0c4;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e2530;
+}
+.fit-col li::before {
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  font-weight: 700;
+}
+
+.fit-yes {
+  border-top: 3px solid #37b4aa;
+}
+.fit-yes li::before {
+  content: "✓";
+  color: #1b7069;
+}
+
+.fit-no {
+  border-top: 3px solid #3d5a6e;
+}
+.fit-no li::before {
+  content: "✕";
+  color: #3d5a6e;
+}
+
+.fit-more {
+  text-align: center;
+  margin: 28px 0 0;
+}
+
+.fit .section-heading {
+  margin-bottom: 40px;
+}
+
 .price-page {
   padding-top: 40px;
 }
