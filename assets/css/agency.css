@@ -2604,18 +2604,28 @@ section#contact h1.section-heading {
 
 .start-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 576px) {
   .start-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .start-item:last-child:nth-child(odd) {
+    grid-column: 1/-1;
+  }
 }
-@media (max-width: 575px) {
+@media (min-width: 992px) {
   .start-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .start-item, .start-item:last-child:nth-child(odd) {
+    grid-column: span 2;
+  }
+  .start-item:nth-last-child(2):nth-child(3n+1),
+  .start-item:nth-last-child(1):nth-child(3n+2) {
+    grid-column: span 3;
   }
 }
 .start-item {
