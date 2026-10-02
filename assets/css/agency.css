@@ -1005,6 +1005,43 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     gap: 10px;
   }
 }
+.nd-spots,
+.date-spots {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1b7069;
+}
+
+.date-spots {
+  margin-top: 2px;
+}
+
+.is-full .nd-spots,
+.is-full .date-spots {
+  color: #3d5a6e;
+}
+
+.path-step p.path-next {
+  flex: 0 0 auto;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0d3451;
+  background: rgba(55, 180, 170, 0.12);
+  border-left: 2px solid #37b4aa;
+}
+.path-step p.path-next.is-full {
+  background: #f4f1eb;
+  border-left-color: #d6d0c4;
+  color: #3d5a6e;
+}
+
 .blog-post-page #mainNav {
   background-color: #0d3451;
   opacity: 1;
