@@ -464,7 +464,9 @@ p, li, dd, dt, figcaption, th, td {
 #mainNav .navbar-nav .nav-item .nav-link.nav-lang {
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 2px;
-  padding: 0.35em 0.7em;
+  padding: 8.25px 14px !important;
+  margin-top: 7px;
+  margin-bottom: 7px;
   margin-right: 0.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link.nav-lang:hover, #mainNav .navbar-nav .nav-item .nav-link.nav-lang:focus-visible {
