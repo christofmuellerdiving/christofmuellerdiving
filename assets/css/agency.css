@@ -3654,4 +3654,69 @@ section#contact h1.section-heading {
   gap: 14px 32px;
 }
 
+.course-voices {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid #d6d0c4;
+}
+.course-voices .kicker {
+  margin-bottom: 16px;
+}
+
+.course-voice {
+  margin: 0 0 22px;
+}
+.course-voice blockquote {
+  margin: 0 0 10px;
+}
+.course-voice blockquote p {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  color: #0d3451;
+  margin: 0;
+}
+.course-voice figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #3d5a6e;
+}
+.course-voice figcaption img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.course-voice figcaption strong {
+  color: #0d3451;
+}
+
+.course-content p.course-voices-note {
+  font-size: 0.92rem;
+  color: #3d5a6e;
+  margin: 4px 0 0;
+}
+
+.course-content .course-voices .kicker {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #1b7069;
+}
+
+.path-step .path-body p.path-quote {
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #1e2530;
+  margin: 0 0 14px;
+}
+.path-step .path-body p.path-quote span {
+  font-style: normal;
+  font-weight: 600;
+  color: #0d3451;
+  white-space: nowrap;
+}
+
 /*# sourceMappingURL=agency.css.map */
