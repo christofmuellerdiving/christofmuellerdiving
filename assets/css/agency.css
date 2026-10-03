@@ -3758,4 +3758,44 @@ section#contact h1.section-heading {
   gap: 12px 32px;
 }
 
+.course-posts {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid #d6d0c4;
+}
+.course-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-content .course-posts .kicker {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #1b7069;
+  margin-bottom: 14px;
+}
+
+.course-content .course-posts li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.quote-card p.quote-post {
+  margin: 16px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.course-content section.course-voices {
+  padding: 28px 0 0;
+}
+
+.course-content section.course-posts {
+  padding: 24px 0 0;
+}
+
 /*# sourceMappingURL=agency.css.map */
