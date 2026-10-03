@@ -1187,6 +1187,30 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 16px;
 }
 
+.modal-content {
+  background-color: #f4f1eb;
+  border: none;
+  border-radius: 2px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.modal-body > .container > .row > [class^=col] > img,
+.modal-body > .container > .row > [class*=" col"] > img {
+  display: block;
+  width: calc(100% + 32px);
+  max-width: calc(100% + 32px);
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
 .blog-post-page #mainNav,
 .blog-post-page #mainNav:not(.navbar-shrink) {
   background-color: #0d3451;
