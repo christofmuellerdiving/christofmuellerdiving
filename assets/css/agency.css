@@ -3624,4 +3624,34 @@ section#contact h1.section-heading {
   width: 100%;
 }
 
+.notfound-hero {
+  padding-bottom: 72px;
+}
+
+.notfound-en {
+  margin: 28px 0 0;
+  color: #8ca9b8;
+  font-size: 0.95rem;
+}
+.notfound-en a {
+  color: #37b4aa;
+}
+
+.notfound-links {
+  background: #fff;
+  padding: 56px 0 72px;
+}
+.notfound-links .kicker {
+  margin-bottom: 18px;
+}
+
+.notfound-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px 32px;
+}
+
 /*# sourceMappingURL=agency.css.map */
