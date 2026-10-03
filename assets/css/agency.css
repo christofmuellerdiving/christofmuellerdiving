@@ -313,6 +313,11 @@ video,
 iframe,
 svg {
   max-width: 100%;
+}
+
+img:not([height]),
+video:not([height]),
+svg:not([height]) {
   height: auto;
 }
 
