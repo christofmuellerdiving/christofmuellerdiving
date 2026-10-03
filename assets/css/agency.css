@@ -2403,6 +2403,12 @@ section#contact h1.section-heading {
   color: #f4f1eb;
 }
 
+.content-var-body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
 .page-section p.section-subheading {
   font-size: 16px;
   font-weight: 400;
@@ -3573,6 +3579,40 @@ section#contact h1.section-heading {
   font-size: 12.5px;
   line-height: 1.4;
   color: #1b7069;
+}
+
+.about-hero-img img {
+  object-position: 35% 30%;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+}
+.about-list li {
+  padding: 9px 0;
+  border-bottom: 1px solid #d6d0c4;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: #1e2530;
+}
+.about-list li:last-child {
+  border-bottom: 0;
+}
+.about-list strong {
+  color: #0d3451;
+}
+
+.course-card .kicker.about-card-kicker {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid #d6d0c4;
+}
+
+.course-content img.about-portrait {
+  max-width: 400px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=agency.css.map */
