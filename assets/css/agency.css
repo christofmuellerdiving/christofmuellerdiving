@@ -308,6 +308,20 @@ tr:nth-child(even) {
     grid-template-columns: 40px 1fr;
   }
 }
+img,
+video,
+iframe,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li, dd, dt, figcaption, th, td {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .btn {
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: 600;
