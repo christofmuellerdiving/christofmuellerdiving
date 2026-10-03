@@ -1168,7 +1168,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 16px;
 }
 
-.blog-post-page #mainNav {
+.blog-post-page #mainNav,
+.blog-post-page #mainNav:not(.navbar-shrink) {
   background-color: #0d3451;
   opacity: 1;
 }
