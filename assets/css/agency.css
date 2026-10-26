@@ -3944,6 +3944,16 @@ section#contact h1.section-heading {
   margin-top: 2px;
 }
 
+.prep-docs li a .prep-dl {
+  margin-left: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #3d5a6e;
+}
+
 .course-content p.prep-note {
   font-size: 0.92rem;
   line-height: 1.5;
