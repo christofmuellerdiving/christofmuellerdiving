@@ -327,6 +327,14 @@ p, li, dd, dt, figcaption, th, td {
   word-wrap: break-word;
 }
 
+svg.svg-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
 .btn {
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: 600;
@@ -384,12 +392,18 @@ p, li, dd, dt, figcaption, th, td {
   background-color: none;
   font-family: "Source Serif 4", Georgia, serif;
 }
+#mainNav .navbar-toggler .svg-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
 #mainNav .navbar-brand {
   position: relative;
   font-family: "Playfair Display", Georgia, serif;
   z-index: 100;
 }
 #mainNav .navbar-brand img {
+  width: auto;
   transition: height 0.3s;
 }
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -938,7 +952,9 @@ ul.social-buttons {
 ul.social-buttons li a {
   font-size: 20px;
   line-height: 50px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   -webkit-transition: all 0.3s;
@@ -1497,7 +1513,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #f4f1eb;
 }
 
-.hero-media {
+.hero .hero-media {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1506,6 +1522,20 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   object-position: center;
 }
 
+.hero .hero-video {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero .hero-video.is-playing {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-video {
+    display: none;
+  }
+}
 .hero-scrim {
   position: absolute;
   inset: 0;
@@ -1941,6 +1971,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     animation: none;
   }
   .path-step, .path-img img, .post-img img, .portfolio-link img {
+    transition: none;
+  }
+  .hero .hero-video {
     transition: none;
   }
 }
