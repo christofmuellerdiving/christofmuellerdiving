@@ -38,15 +38,15 @@
   <!-- Option 1: Bootstrap Bundle with Popper --><script defer src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <link href="/assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="/assets/css/all.min.css?v=1793092378" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/all.min.css?v=1793094195" rel="stylesheet" type="text/css" />
 
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1793092378" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1793094195" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1793092378" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1793094195" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
@@ -105,7 +105,7 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1793092378"></script>
+  <script src="/assets/js/custom.js?v=1793094195"></script>
   <!-- End Navigation -->
 
 <div class="container" id="pagecontainer" style="padding-top: 100px;">
@@ -119,54 +119,129 @@
     </nav>
     <p class="kicker">Vorbereitung</p>
     <h1 class="prep-title">SDI Sidemount Diver</h1>
-    <p class="prep-lead">Was du zum Kurs mitbringst und welche Formulare du vorher brauchst. Zum Abhaken kannst du die Liste ausdrucken oder als PDF speichern.</p>
+    <p class="prep-lead">Vor jedem Tauchgang gehst du START durch: S-Drill, Team, Air, Route, Tables. Für den Kurs machst du dasselbe, nur ein paar Tage früher. Hier steht alles, was der Kurs von dir verlangt.</p>
     <p class="prep-actions"><button type="button" class="btn btn-outline-primary" onclick="window.print()" data-umami-event="prep-print" data-umami-event-course="sdi-sidemount-diver">Drucken oder als PDF speichern</button></p>
 
-    <h2 class="prep-h">Was du mitbringst</h2>
-    <div class="prep-groups">
-      <div class="prep-group">
-        <h3>Anzug und Kälteschutz</h3>
-        <ul class="prep-list">
-          <li>Trocken- oder Nassanzug, passend zur Wassertemperatur</li>
-          <li>Unterzieher und warme Socken für den Trockentauchanzug, Füßlinge für den Nassanzug</li>
-          <li>Haube und Handschuhe</li>
-          <li>Zwei Mützen, eine verschwindet erfahrungsgemäß</li>
-        </ul>
+    <h2 class="prep-h">Was du für den Kurs brauchst</h2>
+    <p class="prep-scheme">Gegliedert nach START</p>
+    <div class="prep-sections">
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-before">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true"></span>
+          <div>
+            <p class="prep-term">Vor dem Start</p>
+            <h3 id="prep-sec-before">Unterlagen</h3>
+          </div>
+        </div>
+  <ul class="prep-list prep-forms">
+    <li><a href="/assets/forms/diver-medical-questionnaire-en.pdf" download data-umami-event="prep-form-download" data-umami-event-file="diver-medical-questionnaire-en.pdf" data-umami-event-course="sdi-sidemount-diver">Medizinische Selbstauskunft (Diver Medical) <small class="prep-dl">PDF, englisch</small></a><span class="prep-form-text">Vor dem ersten Termin ausfüllen, auch vor der Theorie. Kreuzt du bei Frage 3, 5 oder 10 oder auf Seite 2 ein Ja an, brauchst du eine ärztliche Freigabe auf Seite 3. Plane dafür Zeit ein.</span></li>
+    <li><a href="/assets/forms/sdi-liability-release-de.pdf" download data-umami-event="prep-form-download" data-umami-event-file="sdi-liability-release-de.pdf" data-umami-event-course="sdi-sidemount-diver">Haftungsausschluss (Liability Release) <small class="prep-dl">PDF</small></a><span class="prep-form-text">Zum Durchlesen vorab. Unterschrieben wird beim ersten Termin, gemeinsam mit allen Teilnehmern.</span></li>
+  </ul>
+        <div class="prep-group">
+          <ul class="prep-list">
+            <li>Brevetkarten und Logbuch</li>
+          </ul>
+        </div><p class="prep-group-note prep-forms-note">Das Medical bitte nicht per Mail oder Kontaktformular schicken. Bring es ausgefüllt zum ersten Termin mit.</p>
       </div>
-      <div class="prep-group">
-        <h3>Sidemount-Ausrüstung</h3>
-        <p class="prep-group-note">Hast du keine eigene Sidemount-Ausrüstung, kannst du sie leihen. Fehlt dir sonst etwas, sag mir bei der Anmeldung Bescheid.</p>
-        <ul class="prep-list">
-          <li>Sidemount-System</li>
-          <li>Zwei Flaschen mit Sidemount-Rigging</li>
-          <li>Zwei Atemregler, jeder mit Finimeter, einer davon mit langem Schlauch</li>
-          <li>Blei</li>
-          <li>Maske und Flossen mit Fersenband</li>
-          <li>Tauchcomputer</li>
-          <li>Kompass, ein Computer mit Kompass reicht</li>
-        </ul>
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-sdrill">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true">S</span>
+          <div>
+            <p class="prep-term">S-Drill</p>
+            <h3 id="prep-sec-sdrill">Atemregler</h3>
+          </div>
+        </div>
+        <div class="prep-group">
+          <ul class="prep-list">
+            <li>Zwei Atemregler, jeder mit Finimeter, einer davon mit langem Schlauch</li>
+          </ul>
+        </div>
       </div>
-      <div class="prep-group">
-        <h3>Werkzeug und Sicherheit</h3>
-        <ul class="prep-list">
-          <li>Boje mit Spool</li>
-          <li>Schneidwerkzeug</li>
-          <li>Tauchlampe, falls vorhanden</li>
-        </ul>
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-team">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true">T</span>
+          <div>
+            <p class="prep-term">Team</p>
+            <h3 id="prep-sec-team">Was dein Buddy beim Check sieht</h3>
+          </div>
+        </div>
+        <div class="prep-group"><p class="prep-group-note">Hast du keine eigene Sidemount-Ausrüstung, kannst du sie leihen. Fehlt dir sonst etwas, sag mir bei der Anmeldung Bescheid.</p>
+          <ul class="prep-list">
+            <li>Sidemount-System</li>
+            <li>Blei</li>
+            <li>Maske und Flossen mit Fersenband</li>
+            <li>Schneidwerkzeug</li>
+          </ul>
+        </div>
+        <div class="prep-group"><h4>Anzug und Kälteschutz</h4>
+          <ul class="prep-list">
+            <li>Trocken- oder Nassanzug, passend zur Wassertemperatur</li>
+            <li>Unterzieher und warme Socken für den Trockentauchanzug, Füßlinge für den Nassanzug</li>
+            <li>Haube und Handschuhe</li>
+          </ul>
+        </div>
       </div>
-      <div class="prep-group">
-        <h3>Persönliches</h3>
-        <ul class="prep-list">
-          <li>Etwas zu essen und zu trinken</li>
-          <li>Persönliche Medikamente</li>
-        </ul>
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-air">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true">A</span>
+          <div>
+            <p class="prep-term">Air</p>
+            <h3 id="prep-sec-air">Flaschen</h3>
+          </div>
+        </div>
+        <div class="prep-group">
+          <ul class="prep-list">
+            <li>Zwei Flaschen mit Sidemount-Rigging</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-route">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true">R</span>
+          <div>
+            <p class="prep-term">Route</p>
+            <h3 id="prep-sec-route">Ein- und Ausstieg, Weg unter Wasser</h3>
+          </div>
+        </div>
+        <div class="prep-group">
+          <ul class="prep-list">
+            <li>Kompass, ein Computer mit Kompass reicht</li>
+            <li>Boje mit Spool</li>
+            <li>Tauchlampe, falls vorhanden</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-tables">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true">T</span>
+          <div>
+            <p class="prep-term">Tables</p>
+            <h3 id="prep-sec-tables">Tiefe und Zeit</h3>
+          </div>
+        </div>
+        <div class="prep-group">
+          <ul class="prep-list">
+            <li>Tauchcomputer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="prep-sec" role="group" aria-labelledby="prep-sec-after">
+        <div class="prep-sec-head">
+          <span class="prep-letter" aria-hidden="true"></span>
+          <div>
+            <p class="prep-term">Nach dem Tauchgang</p>
+            <h3 id="prep-sec-after">Am Wasser</h3>
+          </div>
+        </div>
+        <div class="prep-group">
+          <ul class="prep-list">
+            <li>Zwei Mützen, eine verschwindet erfahrungsgemäß</li>
+            <li>Etwas zu essen und zu trinken</li>
+            <li>Persönliche Medikamente</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <h2 class="prep-h">Unterlagen vor dem Kurs</h2>
-    <ul class="prep-docs">
-      <li><a href="/assets/forms/diver-medical-questionnaire-en.pdf" download data-umami-event="prep-form-download" data-umami-event-file="diver-medical-questionnaire-en.pdf" data-umami-event-course="sdi-sidemount-diver">Medizinische Selbstauskunft (Diver Medical) <small class="prep-dl">PDF, englisch</small></a><span>Vor dem ersten Termin ausfüllen, auch vor der Theorie. Kreuzt du bei Frage 3, 5 oder 10 oder auf Seite 2 ein Ja an, brauchst du eine ärztliche Freigabe auf Seite 3. Plane dafür Zeit ein.</span></li>
-      <li><a href="/assets/forms/sdi-liability-release-de.pdf" download data-umami-event="prep-form-download" data-umami-event-file="sdi-liability-release-de.pdf" data-umami-event-course="sdi-sidemount-diver">Haftungsausschluss (Liability Release) <small class="prep-dl">PDF</small></a><span>Zum Durchlesen vorab. Unterschrieben wird beim ersten Termin, gemeinsam mit allen Teilnehmern.</span></li>
-    </ul><p class="prep-note">Das Medical bitte nicht per Mail oder Kontaktformular schicken. Bring es ausgefüllt zum ersten Termin mit.</p>
 
     <p class="prep-back"><a class="link-arrow" href="/pages/sdi-sidemount-diver_de.html">Zurück zum Kurs</a></p>
   </div>
