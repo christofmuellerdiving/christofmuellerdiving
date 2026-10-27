@@ -2478,15 +2478,13 @@ section#contact h1.section-heading {
 @media (max-width: 575px) {
   .course-path .path-step {
     flex-direction: row;
+    align-items: flex-start;
   }
   .course-path .path-step .path-img {
-    flex: 0 0 92px;
-    aspect-ratio: auto;
-    position: relative;
-  }
-  .course-path .path-step .path-img img {
-    position: absolute;
-    inset: 0;
+    flex: 0 0 88px;
+    width: 88px;
+    aspect-ratio: 1/1;
+    margin: 16px 0 0 16px;
   }
   .path-step .path-body p.path-quote, .path-step .path-body p.path-prereq {
     display: none;
