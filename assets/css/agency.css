@@ -2362,6 +2362,12 @@ section[id], .page-section {
   margin-bottom: 28px;
 }
 
+.hero .hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 28px;
+}
+
 .hero .hero-price-link {
   display: inline-flex;
   margin-top: 18px;
@@ -2470,8 +2476,20 @@ section#contact h1.section-heading {
 }
 
 @media (max-width: 575px) {
+  .course-path .path-step {
+    flex-direction: row;
+  }
   .course-path .path-step .path-img {
-    aspect-ratio: 2/1;
+    flex: 0 0 92px;
+    aspect-ratio: auto;
+    position: relative;
+  }
+  .course-path .path-step .path-img img {
+    position: absolute;
+    inset: 0;
+  }
+  .path-step .path-body p.path-quote, .path-step .path-body p.path-prereq {
+    display: none;
   }
   .path-body {
     padding: 16px 16px 18px;
@@ -2506,6 +2524,10 @@ section#contact h1.section-heading {
 }
 .team-member .about-story {
   margin: 18px 0 0;
+}
+
+.team-member .about-story.about-podcasts {
+  margin-top: 8px;
 }
 
 .xdeep-feature {
@@ -2794,6 +2816,71 @@ section#contact h1.section-heading {
   margin-bottom: 40px;
 }
 
+.start-help {
+  max-width: 680px;
+  margin: 28px auto 0;
+  text-align: center;
+  color: #1e2530;
+}
+.start-help .link-arrow {
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .quote-grid.is-collapsed > .q-more-sm {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .quote-grid.is-collapsed > .q-more-lg {
+    display: none;
+  }
+  .quote-more.quote-more-sm-only {
+    display: none;
+  }
+}
+.quote-more {
+  text-align: center;
+  margin: 32px 0 0;
+}
+
+@media (max-width: 575px) {
+  .course-extras-grid .path-step .path-img {
+    display: none;
+  }
+  .course-extras-grid .path-step .path-body > p:not(.path-next) {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .post-grid {
+    gap: 18px;
+  }
+  .post-card {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    column-gap: 14px;
+    align-items: start;
+  }
+  .post-card .post-img {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    aspect-ratio: 1/1;
+    margin-bottom: 0;
+  }
+  .post-card .post-date {
+    grid-column: 2;
+    margin: 2px 0 4px;
+  }
+  .post-card h4 {
+    grid-column: 2;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .post-card > p:not(.post-date) {
+    display: none;
+  }
+}
 .price-page {
   padding-top: 88px;
 }
