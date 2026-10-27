@@ -3860,7 +3860,55 @@ section#contact h1.section-heading {
   margin-bottom: 14px;
 }
 
-.course-content .course-prep h2.prep-h {
+.course-content .course-prep p.prep-teaser {
+  margin: 0 0 10px;
+}
+
+.course-content .course-prep p.prep-rent {
+  margin: 0 0 10px;
+  color: #0d3451;
+  font-weight: 600;
+}
+
+.course-prep .btn {
+  margin-top: 8px;
+}
+
+.prep-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.prep-wrap .kicker {
+  margin-bottom: 8px;
+}
+
+.prep-wrap h1.prep-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  color: #0d3451;
+  margin: 0 0 12px;
+}
+
+@media (min-width: 768px) {
+  .prep-wrap h1.prep-title {
+    font-size: 2.4rem;
+  }
+}
+.prep-wrap p.prep-lead {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: #3d5a6e;
+  margin: 0 0 18px;
+  max-width: 680px;
+}
+
+.prep-wrap p.prep-actions {
+  margin: 0 0 34px;
+}
+
+.prep-wrap h2.prep-h {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.35rem;
   line-height: 1.3;
@@ -3879,7 +3927,7 @@ section#contact h1.section-heading {
     grid-template-columns: 1fr 1fr;
   }
 }
-.course-content .prep-group h3 {
+.prep-wrap .prep-group h3 {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 12.5px;
   font-weight: 600;
@@ -3889,7 +3937,7 @@ section#contact h1.section-heading {
   margin: 0 0 10px;
 }
 
-.course-content p.prep-group-note {
+.prep-wrap p.prep-group-note {
   font-size: 0.92rem;
   line-height: 1.5;
   color: #3d5a6e;
@@ -3902,11 +3950,12 @@ section#contact h1.section-heading {
   margin: 0;
 }
 
-.course-content .prep-list li {
+.prep-wrap .prep-list li {
   position: relative;
   padding-left: 26px;
   font-size: 0.98rem;
   line-height: 1.5;
+  color: #1e2530;
   margin-bottom: 8px;
 }
 
@@ -3930,13 +3979,15 @@ section#contact h1.section-heading {
   gap: 16px;
 }
 
-.course-content .prep-docs li {
+.prep-wrap .prep-docs li {
   font-size: 0.98rem;
   line-height: 1.55;
+  color: #1e2530;
 }
 
 .prep-docs li a {
   font-weight: 600;
+  color: #1b7069;
 }
 
 .prep-docs li span {
@@ -3954,11 +4005,71 @@ section#contact h1.section-heading {
   color: #3d5a6e;
 }
 
-.course-content p.prep-note {
+.prep-wrap p.prep-note {
   font-size: 0.92rem;
   line-height: 1.5;
   color: #3d5a6e;
   margin: 0;
+}
+
+.prep-wrap p.prep-back {
+  margin: 40px 0 0;
+}
+
+@media print {
+  #mainNav, .footer, .sticky-cta, .page-crumbs, .prep-actions, .prep-back, .prep-wrap p.prep-lead {
+    display: none !important;
+  }
+  #pagecontainer {
+    padding-top: 0 !important;
+  }
+  body {
+    background: #fff !important;
+  }
+  .page-section.prep-page {
+    padding: 0 !important;
+  }
+  .prep-wrap {
+    max-width: none;
+  }
+  .prep-wrap h1.prep-title {
+    font-size: 20pt;
+    margin-bottom: 10pt;
+  }
+  .prep-wrap h2.prep-h {
+    font-size: 13pt;
+    margin: 4pt 0 8pt;
+  }
+  .prep-groups {
+    grid-template-columns: 1fr 1fr;
+    gap: 8pt 28pt;
+    margin-bottom: 14pt;
+  }
+  .prep-group {
+    break-inside: avoid;
+  }
+  .prep-wrap .prep-list li {
+    font-size: 10pt;
+    margin-bottom: 3pt;
+  }
+  .prep-wrap p.prep-group-note, .prep-wrap p.prep-note {
+    font-size: 9pt;
+    line-height: 1.4;
+    color: #444;
+  }
+  .prep-wrap .prep-docs li {
+    font-size: 10pt;
+  }
+  .prep-docs {
+    gap: 6pt;
+  }
+  .prep-docs li a {
+    color: #0d3451;
+    text-decoration: none;
+  }
+  .prep-docs li a .prep-dl {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=agency.css.map */
