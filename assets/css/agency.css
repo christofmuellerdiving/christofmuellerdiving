@@ -4017,6 +4017,10 @@ section#contact h1.section-heading {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
   #mainNav, .footer, .sticky-cta, .page-crumbs, .prep-actions, .prep-back, .prep-wrap p.prep-lead {
     display: none !important;
   }
@@ -4032,36 +4036,57 @@ section#contact h1.section-heading {
   .prep-wrap {
     max-width: none;
   }
+  .prep-wrap .kicker {
+    font-size: 7.5pt;
+    margin-bottom: 2pt;
+  }
   .prep-wrap h1.prep-title {
-    font-size: 20pt;
-    margin-bottom: 10pt;
+    font-size: 16pt;
+    margin: 0 0 6pt;
   }
   .prep-wrap h2.prep-h {
-    font-size: 13pt;
-    margin: 4pt 0 8pt;
+    font-size: 11pt;
+    margin: 4pt 0 5pt;
   }
   .prep-groups {
-    grid-template-columns: 1fr 1fr;
-    gap: 8pt 28pt;
-    margin-bottom: 14pt;
+    display: block;
+    column-count: 2;
+    column-gap: 22pt;
+    margin-bottom: 6pt;
   }
   .prep-group {
     break-inside: avoid;
+    margin-bottom: 7pt;
   }
-  .prep-wrap .prep-list li {
-    font-size: 10pt;
-    margin-bottom: 3pt;
+  .prep-wrap .prep-group h3 {
+    font-size: 7.5pt;
+    margin: 0 0 3pt;
   }
   .prep-wrap p.prep-group-note, .prep-wrap p.prep-note {
-    font-size: 9pt;
-    line-height: 1.4;
+    font-size: 8pt;
+    line-height: 1.3;
     color: #444;
+    margin: 0 0 3pt;
   }
-  .prep-wrap .prep-docs li {
-    font-size: 10pt;
+  .prep-wrap .prep-list li {
+    font-size: 9pt;
+    line-height: 1.3;
+    margin-bottom: 2pt;
+    padding-left: 15pt;
+  }
+  .prep-list li::before {
+    width: 8pt;
+    height: 8pt;
+    top: 0.18em;
+    border-width: 1pt;
   }
   .prep-docs {
-    gap: 6pt;
+    gap: 4pt;
+    margin-bottom: 4pt;
+  }
+  .prep-wrap .prep-docs li {
+    font-size: 8.5pt;
+    line-height: 1.3;
   }
   .prep-docs li a {
     color: #0d3451;
