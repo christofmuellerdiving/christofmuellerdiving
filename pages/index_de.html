@@ -42,10 +42,10 @@
   <!-- Schriften lokal (keine Verbindung zu Google) -->
   <link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link href="/assets/css/fonts.css?v=1793281183" rel="stylesheet" />
+  <link href="/assets/css/fonts.css?v=1793281761" rel="stylesheet" />
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="/assets/css/agency.css?v=1793281183" rel="stylesheet" />
+  <link href="/assets/css/agency.css?v=1793281761" rel="stylesheet" />
 
   <!-- Page container change top padding when nav shrinks -->
   
@@ -119,7 +119,7 @@
     </div>
   </nav>
 
-  <script src="/assets/js/custom.js?v=1793281183"></script>
+  <script src="/assets/js/custom.js?v=1793281761"></script>
   <!-- End Navigation -->
 
 
@@ -129,6 +129,8 @@
     <source media="(max-width: 767px) and (orientation: portrait)" srcset="/assets/img/background/1-m.webp" />
     <img class="hero-media" src="/assets/img/background/1.webp" alt="" fetchpriority="high" />
   </picture>
+  <video class="hero-media hero-video" id="heroVideo" muted loop playsinline preload="none"
+         data-src="/assets/videos/christof.mp4" aria-hidden="true"></video>
   <div class="hero-scrim"></div>
   <div class="container hero-content">
     <div class="hero-copy">
@@ -157,18 +159,22 @@
 </div>
 
 <script>
-  // Video nur auf Desktop, ohne "Bewegung reduzieren" und ohne Datensparmodus
+  // Video nur auf Desktop, ohne "Bewegung reduzieren", ohne Datensparmodus und nicht bei langsamer Verbindung.
+  // Es lädt erst nach der Seite, damit das Standbild und der Text zuerst da sind.
   (function () {
     var v = document.getElementById('heroVideo');
     if (!v) return;
     var desktop = window.matchMedia('(min-width: 768px)').matches;
     var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var save = navigator.connection && navigator.connection.saveData;
-    if (desktop && !calm && !save) {
+    var c = navigator.connection;
+    var slow = c && (c.saveData || /(^|-)2g|3g/.test(c.effectiveType || ''));
+    if (!desktop || calm || slow) return;
+    function start() {
       v.addEventListener('playing', function () { v.classList.add('is-playing'); }, { once: true });
       v.src = v.dataset.src;
       v.play().catch(function () {});
     }
+    if (document.readyState === 'complete') start(); else window.addEventListener('load', start, { once: true });
   })();
 </script>
 <!-- End Hero -->
