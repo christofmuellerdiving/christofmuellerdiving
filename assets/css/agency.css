@@ -2070,6 +2070,15 @@ section[id], .page-section {
   border-radius: 50%;
   background: #37b4aa;
 }
+.hero-trust li a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(55, 180, 170, 0.7);
+  text-underline-offset: 4px;
+}
+.hero-trust li a:hover {
+  color: #fff;
+}
 
 @media (max-width: 767px) {
   .hero-trust {
