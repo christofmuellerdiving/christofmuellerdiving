@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>thinking-diver.com Blog (English)</title>
-  <subtitle>Technical diving, sidemount and GUE: articles by Christof Müller</subtitle>
+  <subtitle>Technical diving, sidemount and GUE: articles by Christof Müller-Schmahl</subtitle>
   <link href="https://www.thinking-diver.com/feed_en.xml" rel="self" type="application/atom+xml" />
   <link href="https://www.thinking-diver.com/pages/blog_en.html" rel="alternate" type="text/html" />
   <id>https://www.thinking-diver.com/feed_en.xml</id>
   <updated>2026-10-18T00:00:00+00:00</updated>
   <author>
-    <name>Christof Müller</name>
+    <name>Christof Müller-Schmahl</name>
     <uri>https://www.thinking-diver.com/pages/about_en.html</uri>
   </author>
   <entry>
@@ -70,7 +70,7 @@
     <id>https://www.thinking-diver.com/2026/06/09/GUE-Fundamentals-or-TDI-Intro-to-Tech-That&apos;s-the-Wrong-Question-Too.html</id>
     <published>2026-06-09T00:00:00+00:00</published>
     <updated>2026-06-09T00:00:00+00:00</updated>
-    <summary>GUE Fundamentals or TDI Intro to Tech? Prerequisites, theory and gear compared, and why sidemount isn&apos;t &apos;tech light&apos;. By Christof Müller, Deepstop Schwetzingen.</summary>
+    <summary>GUE Fundamentals and TDI Intro to Tech compared: prerequisites, theory and gear, and why sidemount isn&apos;t &apos;tech light&apos;.</summary>
     <link href="https://www.thinking-diver.com/assets/img/blog/fundointro.jpg" rel="enclosure" />
   </entry>
   <entry>

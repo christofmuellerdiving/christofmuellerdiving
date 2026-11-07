@@ -1620,6 +1620,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .hero-content .kicker::before {
   background: #37b4aa;
 }
+.hero-content .kicker-name, .hero-content .kicker-rest {
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  .hero-content .kicker-sep {
+    display: none;
+  }
+  .hero-content .kicker-name {
+    display: block;
+  }
+}
 .hero-content h1 {
   color: #f4f1eb;
   font-size: clamp(2.5rem, 6.5vw, 5rem);

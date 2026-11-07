@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
   <title>thinking-diver.com Blog (Deutsch)</title>
-  <subtitle>Technisches Tauchen, Sidemount und GUE: Artikel von Christof Müller</subtitle>
+  <subtitle>Technisches Tauchen, Sidemount und GUE: Artikel von Christof Müller-Schmahl</subtitle>
   <link href="https://www.thinking-diver.com/feed_de.xml" rel="self" type="application/atom+xml" />
   <link href="https://www.thinking-diver.com/pages/blog_de.html" rel="alternate" type="text/html" />
   <id>https://www.thinking-diver.com/feed_de.xml</id>
   <updated>2026-10-18T00:00:00+00:00</updated>
   <author>
-    <name>Christof Müller</name>
+    <name>Christof Müller-Schmahl</name>
     <uri>https://www.thinking-diver.com/pages/about_de.html</uri>
   </author>
   <entry>
