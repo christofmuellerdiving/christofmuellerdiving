@@ -1477,6 +1477,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-transform: none !important;
   font-size: clamp(2rem, 4vw, 2.75rem);
   letter-spacing: -0.015em;
+  text-wrap: balance;
 }
 .page-section h2.section-heading p {
   margin: 0;
